@@ -1,0 +1,450 @@
+2026-01-15T09:00:00Z LOG   db: checkpoint complete: wrote 676 buffers
+2026-01-15T09:00:03Z LOG   db: checkpoint complete: wrote 106 buffers
+2026-01-15T09:00:06Z LOG   db: checkpoint complete: wrote 529 buffers
+2026-01-15T09:00:09Z LOG   db: checkpoint complete: wrote 454 buffers
+2026-01-15T09:00:12Z LOG   db: checkpoint complete: wrote 102 buffers
+2026-01-15T09:00:15Z LOG   db: checkpoint complete: wrote 856 buffers
+2026-01-15T09:00:18Z LOG   db: checkpoint complete: wrote 655 buffers
+2026-01-15T09:00:21Z LOG   db: checkpoint complete: wrote 609 buffers
+2026-01-15T09:00:24Z LOG   db: checkpoint complete: wrote 57 buffers
+2026-01-15T09:00:27Z LOG   db: checkpoint complete: wrote 439 buffers
+2026-01-15T09:00:30Z LOG   db: checkpoint complete: wrote 594 buffers
+2026-01-15T09:00:33Z LOG   db: checkpoint complete: wrote 115 buffers
+2026-01-15T09:00:36Z LOG   db: checkpoint complete: wrote 391 buffers
+2026-01-15T09:00:39Z LOG   db: checkpoint complete: wrote 587 buffers
+2026-01-15T09:00:42Z LOG   db: checkpoint complete: wrote 518 buffers
+2026-01-15T09:00:45Z LOG   db: checkpoint complete: wrote 486 buffers
+2026-01-15T09:00:48Z LOG   db: checkpoint complete: wrote 316 buffers
+2026-01-15T09:00:51Z LOG   db: checkpoint complete: wrote 93 buffers
+2026-01-15T09:00:54Z LOG   db: checkpoint complete: wrote 516 buffers
+2026-01-15T09:00:57Z LOG   db: checkpoint complete: wrote 633 buffers
+2026-01-15T09:01:00Z LOG   db: checkpoint complete: wrote 438 buffers
+2026-01-15T09:01:03Z LOG   db: checkpoint complete: wrote 510 buffers
+2026-01-15T09:01:06Z LOG   db: checkpoint complete: wrote 792 buffers
+2026-01-15T09:01:09Z LOG   db: checkpoint complete: wrote 358 buffers
+2026-01-15T09:01:12Z LOG   db: checkpoint complete: wrote 603 buffers
+2026-01-15T09:01:15Z LOG   db: checkpoint complete: wrote 286 buffers
+2026-01-15T09:01:18Z LOG   db: checkpoint complete: wrote 72 buffers
+2026-01-15T09:01:21Z LOG   db: checkpoint complete: wrote 707 buffers
+2026-01-15T09:01:24Z LOG   db: checkpoint complete: wrote 694 buffers
+2026-01-15T09:01:27Z LOG   db: checkpoint complete: wrote 373 buffers
+2026-01-15T09:01:30Z LOG   db: checkpoint complete: wrote 515 buffers
+2026-01-15T09:01:33Z LOG   db: checkpoint complete: wrote 142 buffers
+2026-01-15T09:01:36Z LOG   db: checkpoint complete: wrote 518 buffers
+2026-01-15T09:01:39Z LOG   db: checkpoint complete: wrote 421 buffers
+2026-01-15T09:01:42Z LOG   db: checkpoint complete: wrote 848 buffers
+2026-01-15T09:01:45Z LOG   db: checkpoint complete: wrote 733 buffers
+2026-01-15T09:01:48Z LOG   db: checkpoint complete: wrote 246 buffers
+2026-01-15T09:01:51Z LOG   db: checkpoint complete: wrote 164 buffers
+2026-01-15T09:01:54Z LOG   db: checkpoint complete: wrote 22 buffers
+2026-01-15T09:01:57Z LOG   db: checkpoint complete: wrote 279 buffers
+2026-01-15T09:02:00Z LOG   db: checkpoint complete: wrote 439 buffers
+2026-01-15T09:02:03Z LOG   db: checkpoint complete: wrote 589 buffers
+2026-01-15T09:02:06Z LOG   db: checkpoint complete: wrote 642 buffers
+2026-01-15T09:02:09Z LOG   db: checkpoint complete: wrote 411 buffers
+2026-01-15T09:02:12Z LOG   db: checkpoint complete: wrote 116 buffers
+2026-01-15T09:02:15Z LOG   db: checkpoint complete: wrote 73 buffers
+2026-01-15T09:02:18Z LOG   db: checkpoint complete: wrote 461 buffers
+2026-01-15T09:02:21Z LOG   db: checkpoint complete: wrote 625 buffers
+2026-01-15T09:02:24Z LOG   db: checkpoint complete: wrote 590 buffers
+2026-01-15T09:02:27Z LOG   db: checkpoint complete: wrote 382 buffers
+2026-01-15T09:02:30Z LOG   db: checkpoint complete: wrote 222 buffers
+2026-01-15T09:02:33Z LOG   db: checkpoint complete: wrote 659 buffers
+2026-01-15T09:02:36Z LOG   db: checkpoint complete: wrote 382 buffers
+2026-01-15T09:02:39Z LOG   db: checkpoint complete: wrote 879 buffers
+2026-01-15T09:02:42Z LOG   db: checkpoint complete: wrote 505 buffers
+2026-01-15T09:02:45Z LOG   db: checkpoint complete: wrote 114 buffers
+2026-01-15T09:02:48Z LOG   db: checkpoint complete: wrote 858 buffers
+2026-01-15T09:02:51Z LOG   db: checkpoint complete: wrote 220 buffers
+2026-01-15T09:02:54Z LOG   db: checkpoint complete: wrote 716 buffers
+2026-01-15T09:02:57Z LOG   db: checkpoint complete: wrote 315 buffers
+2026-01-15T09:03:00Z LOG   db: checkpoint complete: wrote 540 buffers
+2026-01-15T09:03:03Z LOG   db: checkpoint complete: wrote 800 buffers
+2026-01-15T09:03:06Z LOG   db: checkpoint complete: wrote 807 buffers
+2026-01-15T09:03:09Z LOG   db: checkpoint complete: wrote 637 buffers
+2026-01-15T09:03:12Z LOG   db: checkpoint complete: wrote 767 buffers
+2026-01-15T09:03:15Z LOG   db: checkpoint complete: wrote 514 buffers
+2026-01-15T09:03:18Z LOG   db: checkpoint complete: wrote 819 buffers
+2026-01-15T09:03:21Z LOG   db: checkpoint complete: wrote 208 buffers
+2026-01-15T09:03:24Z LOG   db: checkpoint complete: wrote 837 buffers
+2026-01-15T09:03:27Z LOG   db: checkpoint complete: wrote 235 buffers
+2026-01-15T09:03:30Z LOG   db: checkpoint complete: wrote 211 buffers
+2026-01-15T09:03:33Z LOG   db: checkpoint complete: wrote 649 buffers
+2026-01-15T09:03:36Z LOG   db: checkpoint complete: wrote 678 buffers
+2026-01-15T09:03:39Z LOG   db: checkpoint complete: wrote 864 buffers
+2026-01-15T09:03:42Z LOG   db: checkpoint complete: wrote 499 buffers
+2026-01-15T09:03:45Z LOG   db: checkpoint complete: wrote 98 buffers
+2026-01-15T09:03:48Z LOG   db: checkpoint complete: wrote 771 buffers
+2026-01-15T09:03:51Z LOG   db: checkpoint complete: wrote 140 buffers
+2026-01-15T09:03:54Z LOG   db: checkpoint complete: wrote 486 buffers
+2026-01-15T09:03:57Z LOG   db: checkpoint complete: wrote 495 buffers
+2026-01-15T09:04:00Z LOG   db: checkpoint complete: wrote 571 buffers
+2026-01-15T09:04:03Z LOG   db: checkpoint complete: wrote 828 buffers
+2026-01-15T09:04:06Z LOG   db: checkpoint complete: wrote 454 buffers
+2026-01-15T09:04:09Z LOG   db: checkpoint complete: wrote 267 buffers
+2026-01-15T09:04:12Z LOG   db: checkpoint complete: wrote 256 buffers
+2026-01-15T09:04:15Z LOG   db: checkpoint complete: wrote 567 buffers
+2026-01-15T09:04:18Z LOG   db: checkpoint complete: wrote 767 buffers
+2026-01-15T09:04:21Z LOG   db: checkpoint complete: wrote 844 buffers
+2026-01-15T09:04:24Z LOG   db: checkpoint complete: wrote 143 buffers
+2026-01-15T09:04:27Z LOG   db: checkpoint complete: wrote 532 buffers
+2026-01-15T09:04:30Z LOG   db: checkpoint complete: wrote 633 buffers
+2026-01-15T09:04:33Z LOG   db: checkpoint complete: wrote 154 buffers
+2026-01-15T09:04:36Z LOG   db: checkpoint complete: wrote 579 buffers
+2026-01-15T09:04:39Z LOG   db: checkpoint complete: wrote 553 buffers
+2026-01-15T09:04:42Z LOG   db: checkpoint complete: wrote 583 buffers
+2026-01-15T09:04:45Z LOG   db: checkpoint complete: wrote 293 buffers
+2026-01-15T09:04:48Z LOG   db: checkpoint complete: wrote 473 buffers
+2026-01-15T09:04:51Z LOG   db: checkpoint complete: wrote 463 buffers
+2026-01-15T09:04:54Z LOG   db: checkpoint complete: wrote 630 buffers
+2026-01-15T09:04:57Z LOG   db: checkpoint complete: wrote 473 buffers
+2026-01-15T09:05:00Z LOG   db: checkpoint complete: wrote 529 buffers
+2026-01-15T09:05:03Z LOG   db: checkpoint complete: wrote 275 buffers
+2026-01-15T09:05:06Z LOG   db: checkpoint complete: wrote 150 buffers
+2026-01-15T09:05:09Z LOG   db: checkpoint complete: wrote 462 buffers
+2026-01-15T09:05:12Z LOG   db: checkpoint complete: wrote 448 buffers
+2026-01-15T09:05:15Z LOG   db: checkpoint complete: wrote 812 buffers
+2026-01-15T09:05:18Z LOG   db: checkpoint complete: wrote 156 buffers
+2026-01-15T09:05:21Z LOG   db: checkpoint complete: wrote 234 buffers
+2026-01-15T09:05:24Z LOG   db: checkpoint complete: wrote 176 buffers
+2026-01-15T09:05:27Z LOG   db: checkpoint complete: wrote 537 buffers
+2026-01-15T09:05:30Z LOG   db: checkpoint complete: wrote 210 buffers
+2026-01-15T09:05:33Z LOG   db: checkpoint complete: wrote 749 buffers
+2026-01-15T09:05:36Z LOG   db: checkpoint complete: wrote 577 buffers
+2026-01-15T09:05:39Z LOG   db: checkpoint complete: wrote 403 buffers
+2026-01-15T09:05:42Z LOG   db: checkpoint complete: wrote 312 buffers
+2026-01-15T09:05:45Z LOG   db: checkpoint complete: wrote 817 buffers
+2026-01-15T09:05:48Z LOG   db: checkpoint complete: wrote 281 buffers
+2026-01-15T09:05:51Z LOG   db: checkpoint complete: wrote 286 buffers
+2026-01-15T09:05:54Z LOG   db: checkpoint complete: wrote 425 buffers
+2026-01-15T09:05:57Z LOG   db: checkpoint complete: wrote 594 buffers
+2026-01-15T09:06:00Z LOG   db: checkpoint complete: wrote 101 buffers
+2026-01-15T09:06:03Z LOG   db: checkpoint complete: wrote 445 buffers
+2026-01-15T09:06:06Z LOG   db: checkpoint complete: wrote 659 buffers
+2026-01-15T09:06:09Z LOG   db: checkpoint complete: wrote 632 buffers
+2026-01-15T09:06:12Z LOG   db: checkpoint complete: wrote 893 buffers
+2026-01-15T09:06:15Z LOG   db: checkpoint complete: wrote 357 buffers
+2026-01-15T09:06:18Z LOG   db: checkpoint complete: wrote 646 buffers
+2026-01-15T09:06:21Z LOG   db: checkpoint complete: wrote 736 buffers
+2026-01-15T09:06:24Z LOG   db: checkpoint complete: wrote 278 buffers
+2026-01-15T09:06:27Z LOG   db: checkpoint complete: wrote 329 buffers
+2026-01-15T09:06:30Z LOG   db: checkpoint complete: wrote 306 buffers
+2026-01-15T09:06:33Z LOG   db: checkpoint complete: wrote 287 buffers
+2026-01-15T09:06:36Z LOG   db: checkpoint complete: wrote 47 buffers
+2026-01-15T09:06:39Z LOG   db: checkpoint complete: wrote 574 buffers
+2026-01-15T09:06:42Z LOG   db: checkpoint complete: wrote 261 buffers
+2026-01-15T09:06:45Z LOG   db: checkpoint complete: wrote 682 buffers
+2026-01-15T09:06:48Z LOG   db: checkpoint complete: wrote 528 buffers
+2026-01-15T09:06:51Z LOG   db: checkpoint complete: wrote 245 buffers
+2026-01-15T09:06:54Z LOG   db: checkpoint complete: wrote 424 buffers
+2026-01-15T09:06:57Z LOG   db: checkpoint complete: wrote 24 buffers
+2026-01-15T09:07:00Z LOG   db: checkpoint complete: wrote 451 buffers
+2026-01-15T09:07:03Z LOG   db: checkpoint complete: wrote 691 buffers
+2026-01-15T09:07:06Z LOG   db: checkpoint complete: wrote 623 buffers
+2026-01-15T09:07:09Z LOG   db: checkpoint complete: wrote 56 buffers
+2026-01-15T09:07:12Z LOG   db: checkpoint complete: wrote 285 buffers
+2026-01-15T09:07:15Z LOG   db: checkpoint complete: wrote 382 buffers
+2026-01-15T09:07:18Z LOG   db: checkpoint complete: wrote 260 buffers
+2026-01-15T09:07:21Z LOG   db: checkpoint complete: wrote 375 buffers
+2026-01-15T09:07:24Z LOG   db: checkpoint complete: wrote 400 buffers
+2026-01-15T09:07:27Z LOG   db: checkpoint complete: wrote 524 buffers
+2026-01-15T09:07:30Z LOG   db: checkpoint complete: wrote 804 buffers
+2026-01-15T09:07:33Z LOG   db: checkpoint complete: wrote 846 buffers
+2026-01-15T09:07:36Z LOG   db: checkpoint complete: wrote 610 buffers
+2026-01-15T09:07:39Z LOG   db: checkpoint complete: wrote 316 buffers
+2026-01-15T09:07:42Z LOG   db: checkpoint complete: wrote 96 buffers
+2026-01-15T09:07:45Z LOG   db: checkpoint complete: wrote 683 buffers
+2026-01-15T09:07:48Z LOG   db: checkpoint complete: wrote 747 buffers
+2026-01-15T09:07:51Z LOG   db: checkpoint complete: wrote 751 buffers
+2026-01-15T09:07:54Z LOG   db: checkpoint complete: wrote 54 buffers
+2026-01-15T09:07:57Z LOG   db: checkpoint complete: wrote 761 buffers
+2026-01-15T09:08:00Z LOG   db: checkpoint complete: wrote 780 buffers
+2026-01-15T09:08:03Z LOG   db: checkpoint complete: wrote 856 buffers
+2026-01-15T09:08:06Z LOG   db: checkpoint complete: wrote 97 buffers
+2026-01-15T09:08:09Z LOG   db: checkpoint complete: wrote 662 buffers
+2026-01-15T09:08:12Z LOG   db: checkpoint complete: wrote 865 buffers
+2026-01-15T09:08:15Z LOG   db: checkpoint complete: wrote 652 buffers
+2026-01-15T09:08:18Z LOG   db: checkpoint complete: wrote 707 buffers
+2026-01-15T09:08:21Z LOG   db: checkpoint complete: wrote 13 buffers
+2026-01-15T09:08:24Z LOG   db: checkpoint complete: wrote 558 buffers
+2026-01-15T09:08:27Z LOG   db: checkpoint complete: wrote 77 buffers
+2026-01-15T09:08:30Z LOG   db: checkpoint complete: wrote 876 buffers
+2026-01-15T09:08:33Z LOG   db: checkpoint complete: wrote 246 buffers
+2026-01-15T09:08:36Z LOG   db: checkpoint complete: wrote 88 buffers
+2026-01-15T09:08:39Z LOG   db: checkpoint complete: wrote 795 buffers
+2026-01-15T09:08:42Z LOG   db: checkpoint complete: wrote 89 buffers
+2026-01-15T09:08:45Z LOG   db: checkpoint complete: wrote 270 buffers
+2026-01-15T09:08:48Z LOG   db: checkpoint complete: wrote 146 buffers
+2026-01-15T09:08:51Z LOG   db: checkpoint complete: wrote 507 buffers
+2026-01-15T09:08:54Z LOG   db: checkpoint complete: wrote 718 buffers
+2026-01-15T09:08:57Z LOG   db: checkpoint complete: wrote 307 buffers
+2026-01-15T09:09:00Z LOG   db: checkpoint complete: wrote 487 buffers
+2026-01-15T09:09:03Z LOG   db: checkpoint complete: wrote 214 buffers
+2026-01-15T09:09:06Z LOG   db: checkpoint complete: wrote 27 buffers
+2026-01-15T09:09:09Z LOG   db: checkpoint complete: wrote 849 buffers
+2026-01-15T09:09:12Z LOG   db: checkpoint complete: wrote 406 buffers
+2026-01-15T09:09:15Z LOG   db: checkpoint complete: wrote 605 buffers
+2026-01-15T09:09:18Z LOG   db: checkpoint complete: wrote 278 buffers
+2026-01-15T09:09:21Z LOG   db: checkpoint complete: wrote 849 buffers
+2026-01-15T09:09:24Z LOG   db: checkpoint complete: wrote 730 buffers
+2026-01-15T09:09:27Z LOG   db: checkpoint complete: wrote 507 buffers
+2026-01-15T09:09:30Z LOG   db: checkpoint complete: wrote 13 buffers
+2026-01-15T09:09:33Z LOG   db: checkpoint complete: wrote 425 buffers
+2026-01-15T09:09:36Z LOG   db: checkpoint complete: wrote 362 buffers
+2026-01-15T09:09:39Z LOG   db: checkpoint complete: wrote 870 buffers
+2026-01-15T09:09:42Z LOG   db: checkpoint complete: wrote 778 buffers
+2026-01-15T09:09:45Z LOG   db: checkpoint complete: wrote 210 buffers
+2026-01-15T09:09:48Z LOG   db: checkpoint complete: wrote 391 buffers
+2026-01-15T09:09:51Z LOG   db: checkpoint complete: wrote 900 buffers
+2026-01-15T09:09:54Z LOG   db: checkpoint complete: wrote 448 buffers
+2026-01-15T09:09:57Z LOG   db: checkpoint complete: wrote 114 buffers
+2026-01-15T09:10:00Z LOG   db: checkpoint complete: wrote 660 buffers
+2026-01-15T09:10:03Z LOG   db: checkpoint complete: wrote 456 buffers
+2026-01-15T09:10:06Z LOG   db: checkpoint complete: wrote 801 buffers
+2026-01-15T09:10:09Z LOG   db: checkpoint complete: wrote 841 buffers
+2026-01-15T09:10:12Z LOG   db: checkpoint complete: wrote 218 buffers
+2026-01-15T09:10:15Z LOG   db: checkpoint complete: wrote 471 buffers
+2026-01-15T09:10:18Z LOG   db: checkpoint complete: wrote 507 buffers
+2026-01-15T09:10:21Z LOG   db: checkpoint complete: wrote 184 buffers
+2026-01-15T09:10:24Z LOG   db: checkpoint complete: wrote 298 buffers
+2026-01-15T09:10:27Z LOG   db: checkpoint complete: wrote 425 buffers
+2026-01-15T09:10:30Z LOG   db: checkpoint complete: wrote 580 buffers
+2026-01-15T09:10:33Z LOG   db: checkpoint complete: wrote 668 buffers
+2026-01-15T09:10:36Z LOG   db: checkpoint complete: wrote 522 buffers
+2026-01-15T09:10:39Z LOG   db: checkpoint complete: wrote 473 buffers
+2026-01-15T09:10:42Z LOG   db: checkpoint complete: wrote 152 buffers
+2026-01-15T09:10:45Z LOG   db: checkpoint complete: wrote 102 buffers
+2026-01-15T09:10:48Z LOG   db: checkpoint complete: wrote 103 buffers
+2026-01-15T09:10:51Z LOG   db: checkpoint complete: wrote 274 buffers
+2026-01-15T09:10:54Z LOG   db: checkpoint complete: wrote 777 buffers
+2026-01-15T09:10:57Z LOG   db: checkpoint complete: wrote 773 buffers
+2026-01-15T09:11:00Z LOG   db: checkpoint complete: wrote 286 buffers
+2026-01-15T09:11:03Z LOG   db: checkpoint complete: wrote 294 buffers
+2026-01-15T09:11:06Z LOG   db: checkpoint complete: wrote 713 buffers
+2026-01-15T09:11:09Z LOG   db: checkpoint complete: wrote 104 buffers
+2026-01-15T09:11:12Z LOG   db: checkpoint complete: wrote 419 buffers
+2026-01-15T09:11:15Z LOG   db: checkpoint complete: wrote 879 buffers
+2026-01-15T09:11:18Z LOG   db: checkpoint complete: wrote 445 buffers
+2026-01-15T09:11:21Z LOG   db: checkpoint complete: wrote 10 buffers
+2026-01-15T09:11:24Z LOG   db: checkpoint complete: wrote 885 buffers
+2026-01-15T09:11:27Z LOG   db: checkpoint complete: wrote 811 buffers
+2026-01-15T09:11:30Z LOG   db: checkpoint complete: wrote 165 buffers
+2026-01-15T09:11:33Z LOG   db: checkpoint complete: wrote 855 buffers
+2026-01-15T09:11:36Z LOG   db: checkpoint complete: wrote 805 buffers
+2026-01-15T09:11:39Z LOG   db: checkpoint complete: wrote 248 buffers
+2026-01-15T09:11:42Z LOG   db: checkpoint complete: wrote 141 buffers
+2026-01-15T09:11:45Z LOG   db: checkpoint complete: wrote 725 buffers
+2026-01-15T09:11:48Z LOG   db: checkpoint complete: wrote 317 buffers
+2026-01-15T09:11:51Z LOG   db: checkpoint complete: wrote 407 buffers
+2026-01-15T09:11:54Z LOG   db: checkpoint complete: wrote 11 buffers
+2026-01-15T09:11:57Z LOG   db: checkpoint complete: wrote 481 buffers
+2026-01-15T09:12:00Z LOG   db: checkpoint complete: wrote 496 buffers
+2026-01-15T09:12:03Z LOG   db: checkpoint complete: wrote 262 buffers
+2026-01-15T09:12:06Z LOG   db: checkpoint complete: wrote 66 buffers
+2026-01-15T09:12:09Z LOG   db: checkpoint complete: wrote 700 buffers
+2026-01-15T09:12:12Z LOG   db: checkpoint complete: wrote 243 buffers
+2026-01-15T09:12:15Z LOG   db: checkpoint complete: wrote 514 buffers
+2026-01-15T09:12:18Z LOG   db: checkpoint complete: wrote 745 buffers
+2026-01-15T09:12:21Z LOG   db: checkpoint complete: wrote 212 buffers
+2026-01-15T09:12:24Z LOG   db: checkpoint complete: wrote 79 buffers
+2026-01-15T09:12:27Z LOG   db: checkpoint complete: wrote 329 buffers
+2026-01-15T09:12:30Z LOG   db: checkpoint complete: wrote 236 buffers
+2026-01-15T09:12:33Z LOG   db: checkpoint complete: wrote 648 buffers
+2026-01-15T09:12:36Z LOG   db: checkpoint complete: wrote 238 buffers
+2026-01-15T09:12:39Z LOG   db: checkpoint complete: wrote 619 buffers
+2026-01-15T09:12:42Z LOG   db: checkpoint complete: wrote 228 buffers
+2026-01-15T09:12:45Z LOG   db: checkpoint complete: wrote 435 buffers
+2026-01-15T09:12:48Z LOG   db: checkpoint complete: wrote 198 buffers
+2026-01-15T09:12:51Z LOG   db: checkpoint complete: wrote 760 buffers
+2026-01-15T09:12:54Z LOG   db: checkpoint complete: wrote 347 buffers
+2026-01-15T09:12:57Z LOG   db: checkpoint complete: wrote 774 buffers
+2026-01-15T09:13:00Z LOG   db: checkpoint complete: wrote 690 buffers
+2026-01-15T09:13:03Z LOG   db: checkpoint complete: wrote 463 buffers
+2026-01-15T09:13:06Z LOG   db: checkpoint complete: wrote 90 buffers
+2026-01-15T09:13:09Z LOG   db: checkpoint complete: wrote 440 buffers
+2026-01-15T09:13:12Z LOG   db: checkpoint complete: wrote 399 buffers
+2026-01-15T09:13:15Z LOG   db: checkpoint complete: wrote 99 buffers
+2026-01-15T09:13:18Z LOG   db: checkpoint complete: wrote 210 buffers
+2026-01-15T09:13:21Z LOG   db: checkpoint complete: wrote 207 buffers
+2026-01-15T09:13:24Z LOG   db: checkpoint complete: wrote 41 buffers
+2026-01-15T09:13:27Z LOG   db: checkpoint complete: wrote 51 buffers
+2026-01-15T09:13:30Z LOG   db: checkpoint complete: wrote 74 buffers
+2026-01-15T09:13:33Z LOG   db: checkpoint complete: wrote 775 buffers
+2026-01-15T09:13:36Z LOG   db: checkpoint complete: wrote 381 buffers
+2026-01-15T09:13:39Z LOG   db: checkpoint complete: wrote 54 buffers
+2026-01-15T09:13:42Z LOG   db: checkpoint complete: wrote 292 buffers
+2026-01-15T09:13:45Z LOG   db: checkpoint complete: wrote 834 buffers
+2026-01-15T09:13:48Z LOG   db: checkpoint complete: wrote 119 buffers
+2026-01-15T09:13:51Z LOG   db: checkpoint complete: wrote 818 buffers
+2026-01-15T09:13:54Z LOG   db: checkpoint complete: wrote 145 buffers
+2026-01-15T09:13:57Z LOG   db: checkpoint complete: wrote 831 buffers
+2026-01-15T09:14:00Z LOG   db: checkpoint complete: wrote 631 buffers
+2026-01-15T09:14:03Z LOG   db: checkpoint complete: wrote 481 buffers
+2026-01-15T09:14:06Z LOG   db: checkpoint complete: wrote 534 buffers
+2026-01-15T09:14:09Z LOG   db: checkpoint complete: wrote 263 buffers
+2026-01-15T09:14:12Z LOG   db: checkpoint complete: wrote 503 buffers
+2026-01-15T09:14:15Z LOG   db: checkpoint complete: wrote 174 buffers
+2026-01-15T09:14:18Z LOG   db: checkpoint complete: wrote 281 buffers
+2026-01-15T09:14:21Z LOG   db: checkpoint complete: wrote 108 buffers
+2026-01-15T09:14:24Z LOG   db: checkpoint complete: wrote 187 buffers
+2026-01-15T09:14:27Z LOG   db: checkpoint complete: wrote 481 buffers
+2026-01-15T09:14:30Z LOG   db: checkpoint complete: wrote 775 buffers
+2026-01-15T09:14:33Z LOG   db: checkpoint complete: wrote 808 buffers
+2026-01-15T09:14:36Z LOG   db: checkpoint complete: wrote 590 buffers
+2026-01-15T09:14:39Z LOG   db: checkpoint complete: wrote 765 buffers
+2026-01-15T09:14:42Z LOG   db: checkpoint complete: wrote 263 buffers
+2026-01-15T09:14:45Z LOG   db: checkpoint complete: wrote 167 buffers
+2026-01-15T09:14:48Z LOG   db: checkpoint complete: wrote 344 buffers
+2026-01-15T09:14:51Z LOG   db: checkpoint complete: wrote 261 buffers
+2026-01-15T09:14:54Z LOG   db: checkpoint complete: wrote 675 buffers
+2026-01-15T09:14:57Z LOG   db: checkpoint complete: wrote 47 buffers
+2026-01-15T09:15:00Z FATAL db: password authentication failed for user "payments" (client worker-25)
+2026-01-15T09:15:03Z LOG   db: checkpoint complete: wrote 51 buffers
+2026-01-15T09:15:06Z LOG   db: checkpoint complete: wrote 61 buffers
+2026-01-15T09:15:09Z FATAL db: password authentication failed for user "payments" (client worker-36)
+2026-01-15T09:15:12Z LOG   db: checkpoint complete: wrote 86 buffers
+2026-01-15T09:15:15Z LOG   db: checkpoint complete: wrote 469 buffers
+2026-01-15T09:15:18Z FATAL db: password authentication failed for user "payments" (client worker-18)
+2026-01-15T09:15:21Z LOG   db: checkpoint complete: wrote 736 buffers
+2026-01-15T09:15:24Z LOG   db: checkpoint complete: wrote 232 buffers
+2026-01-15T09:15:27Z FATAL db: password authentication failed for user "payments" (client worker-20)
+2026-01-15T09:15:30Z LOG   db: checkpoint complete: wrote 271 buffers
+2026-01-15T09:15:33Z LOG   db: checkpoint complete: wrote 844 buffers
+2026-01-15T09:15:36Z FATAL db: password authentication failed for user "payments" (client worker-23)
+2026-01-15T09:15:39Z LOG   db: checkpoint complete: wrote 329 buffers
+2026-01-15T09:15:42Z LOG   db: checkpoint complete: wrote 824 buffers
+2026-01-15T09:15:45Z FATAL db: password authentication failed for user "payments" (client worker-25)
+2026-01-15T09:15:48Z LOG   db: checkpoint complete: wrote 824 buffers
+2026-01-15T09:15:51Z LOG   db: checkpoint complete: wrote 168 buffers
+2026-01-15T09:15:54Z FATAL db: password authentication failed for user "payments" (client worker-12)
+2026-01-15T09:15:57Z LOG   db: checkpoint complete: wrote 429 buffers
+2026-01-15T09:16:00Z LOG   db: checkpoint complete: wrote 437 buffers
+2026-01-15T09:16:03Z FATAL db: password authentication failed for user "payments" (client worker-33)
+2026-01-15T09:16:06Z LOG   db: checkpoint complete: wrote 434 buffers
+2026-01-15T09:16:09Z LOG   db: checkpoint complete: wrote 669 buffers
+2026-01-15T09:16:12Z FATAL db: password authentication failed for user "payments" (client worker-33)
+2026-01-15T09:16:15Z LOG   db: checkpoint complete: wrote 454 buffers
+2026-01-15T09:16:18Z LOG   db: checkpoint complete: wrote 850 buffers
+2026-01-15T09:16:21Z FATAL db: password authentication failed for user "payments" (client worker-28)
+2026-01-15T09:16:24Z LOG   db: checkpoint complete: wrote 143 buffers
+2026-01-15T09:16:27Z LOG   db: checkpoint complete: wrote 155 buffers
+2026-01-15T09:16:30Z FATAL db: password authentication failed for user "payments" (client worker-28)
+2026-01-15T09:16:33Z LOG   db: checkpoint complete: wrote 764 buffers
+2026-01-15T09:16:36Z LOG   db: checkpoint complete: wrote 159 buffers
+2026-01-15T09:16:39Z FATAL db: password authentication failed for user "payments" (client worker-15)
+2026-01-15T09:16:42Z LOG   db: checkpoint complete: wrote 78 buffers
+2026-01-15T09:16:45Z LOG   db: checkpoint complete: wrote 781 buffers
+2026-01-15T09:16:48Z FATAL db: password authentication failed for user "payments" (client worker-14)
+2026-01-15T09:16:51Z LOG   db: checkpoint complete: wrote 64 buffers
+2026-01-15T09:16:54Z LOG   db: checkpoint complete: wrote 98 buffers
+2026-01-15T09:16:57Z FATAL db: password authentication failed for user "payments" (client worker-32)
+2026-01-15T09:17:00Z LOG   db: checkpoint complete: wrote 645 buffers
+2026-01-15T09:17:03Z LOG   db: checkpoint complete: wrote 859 buffers
+2026-01-15T09:17:06Z FATAL db: password authentication failed for user "payments" (client worker-28)
+2026-01-15T09:17:09Z LOG   db: checkpoint complete: wrote 540 buffers
+2026-01-15T09:17:12Z LOG   db: checkpoint complete: wrote 136 buffers
+2026-01-15T09:17:15Z FATAL db: password authentication failed for user "payments" (client worker-33)
+2026-01-15T09:17:18Z LOG   db: checkpoint complete: wrote 872 buffers
+2026-01-15T09:17:21Z LOG   db: checkpoint complete: wrote 130 buffers
+2026-01-15T09:17:24Z FATAL db: password authentication failed for user "payments" (client worker-24)
+2026-01-15T09:17:27Z LOG   db: checkpoint complete: wrote 674 buffers
+2026-01-15T09:17:30Z LOG   db: checkpoint complete: wrote 265 buffers
+2026-01-15T09:17:33Z FATAL db: password authentication failed for user "payments" (client worker-31)
+2026-01-15T09:17:36Z LOG   db: checkpoint complete: wrote 458 buffers
+2026-01-15T09:17:39Z LOG   db: checkpoint complete: wrote 643 buffers
+2026-01-15T09:17:42Z FATAL db: password authentication failed for user "payments" (client worker-17)
+2026-01-15T09:17:45Z LOG   db: checkpoint complete: wrote 866 buffers
+2026-01-15T09:17:48Z LOG   db: checkpoint complete: wrote 119 buffers
+2026-01-15T09:17:51Z FATAL db: password authentication failed for user "payments" (client worker-21)
+2026-01-15T09:17:54Z LOG   db: checkpoint complete: wrote 831 buffers
+2026-01-15T09:17:57Z LOG   db: checkpoint complete: wrote 682 buffers
+2026-01-15T09:18:00Z FATAL db: password authentication failed for user "payments" (client worker-30)
+2026-01-15T09:18:03Z LOG   db: checkpoint complete: wrote 806 buffers
+2026-01-15T09:18:06Z LOG   db: checkpoint complete: wrote 65 buffers
+2026-01-15T09:18:09Z FATAL db: password authentication failed for user "payments" (client worker-38)
+2026-01-15T09:18:12Z LOG   db: checkpoint complete: wrote 36 buffers
+2026-01-15T09:18:15Z LOG   db: checkpoint complete: wrote 208 buffers
+2026-01-15T09:18:18Z FATAL db: password authentication failed for user "payments" (client worker-19)
+2026-01-15T09:18:21Z LOG   db: checkpoint complete: wrote 77 buffers
+2026-01-15T09:18:24Z LOG   db: checkpoint complete: wrote 172 buffers
+2026-01-15T09:18:27Z FATAL db: password authentication failed for user "payments" (client worker-18)
+2026-01-15T09:18:30Z LOG   db: checkpoint complete: wrote 524 buffers
+2026-01-15T09:18:33Z LOG   db: checkpoint complete: wrote 279 buffers
+2026-01-15T09:18:36Z FATAL db: password authentication failed for user "payments" (client worker-26)
+2026-01-15T09:18:39Z LOG   db: checkpoint complete: wrote 47 buffers
+2026-01-15T09:18:42Z LOG   db: checkpoint complete: wrote 175 buffers
+2026-01-15T09:18:45Z FATAL db: password authentication failed for user "payments" (client worker-20)
+2026-01-15T09:18:48Z LOG   db: checkpoint complete: wrote 127 buffers
+2026-01-15T09:18:51Z LOG   db: checkpoint complete: wrote 661 buffers
+2026-01-15T09:18:54Z FATAL db: password authentication failed for user "payments" (client worker-27)
+2026-01-15T09:18:57Z LOG   db: checkpoint complete: wrote 715 buffers
+2026-01-15T09:19:00Z LOG   db: checkpoint complete: wrote 654 buffers
+2026-01-15T09:19:03Z FATAL db: password authentication failed for user "payments" (client worker-18)
+2026-01-15T09:19:06Z LOG   db: checkpoint complete: wrote 159 buffers
+2026-01-15T09:19:09Z LOG   db: checkpoint complete: wrote 462 buffers
+2026-01-15T09:19:12Z FATAL db: password authentication failed for user "payments" (client worker-29)
+2026-01-15T09:19:15Z LOG   db: checkpoint complete: wrote 269 buffers
+2026-01-15T09:19:18Z LOG   db: checkpoint complete: wrote 689 buffers
+2026-01-15T09:19:21Z FATAL db: password authentication failed for user "payments" (client worker-33)
+2026-01-15T09:19:24Z LOG   db: checkpoint complete: wrote 307 buffers
+2026-01-15T09:19:27Z LOG   db: checkpoint complete: wrote 437 buffers
+2026-01-15T09:19:30Z FATAL db: password authentication failed for user "payments" (client worker-21)
+2026-01-15T09:19:33Z LOG   db: checkpoint complete: wrote 242 buffers
+2026-01-15T09:19:36Z LOG   db: checkpoint complete: wrote 32 buffers
+2026-01-15T09:19:39Z FATAL db: password authentication failed for user "payments" (client worker-28)
+2026-01-15T09:19:42Z LOG   db: checkpoint complete: wrote 545 buffers
+2026-01-15T09:19:45Z LOG   db: checkpoint complete: wrote 433 buffers
+2026-01-15T09:19:48Z FATAL db: password authentication failed for user "payments" (client worker-19)
+2026-01-15T09:19:51Z LOG   db: checkpoint complete: wrote 219 buffers
+2026-01-15T09:19:54Z LOG   db: checkpoint complete: wrote 172 buffers
+2026-01-15T09:19:57Z FATAL db: password authentication failed for user "payments" (client worker-39)
+2026-01-15T09:20:00Z LOG   db: checkpoint complete: wrote 471 buffers
+2026-01-15T09:20:03Z LOG   db: checkpoint complete: wrote 691 buffers
+2026-01-15T09:20:06Z FATAL db: password authentication failed for user "payments" (client worker-35)
+2026-01-15T09:20:09Z LOG   db: checkpoint complete: wrote 670 buffers
+2026-01-15T09:20:12Z LOG   db: checkpoint complete: wrote 618 buffers
+2026-01-15T09:20:15Z FATAL db: password authentication failed for user "payments" (client worker-24)
+2026-01-15T09:20:18Z LOG   db: checkpoint complete: wrote 761 buffers
+2026-01-15T09:20:21Z LOG   db: checkpoint complete: wrote 10 buffers
+2026-01-15T09:20:24Z FATAL db: password authentication failed for user "payments" (client worker-27)
+2026-01-15T09:20:27Z LOG   db: checkpoint complete: wrote 253 buffers
+2026-01-15T09:20:30Z LOG   db: checkpoint complete: wrote 22 buffers
+2026-01-15T09:20:33Z FATAL db: password authentication failed for user "payments" (client worker-27)
+2026-01-15T09:20:36Z LOG   db: checkpoint complete: wrote 214 buffers
+2026-01-15T09:20:39Z LOG   db: checkpoint complete: wrote 668 buffers
+2026-01-15T09:20:42Z FATAL db: password authentication failed for user "payments" (client worker-30)
+2026-01-15T09:20:45Z LOG   db: checkpoint complete: wrote 530 buffers
+2026-01-15T09:20:48Z LOG   db: checkpoint complete: wrote 650 buffers
+2026-01-15T09:20:51Z FATAL db: password authentication failed for user "payments" (client worker-32)
+2026-01-15T09:20:54Z LOG   db: checkpoint complete: wrote 394 buffers
+2026-01-15T09:20:57Z LOG   db: checkpoint complete: wrote 769 buffers
+2026-01-15T09:21:00Z FATAL db: password authentication failed for user "payments" (client worker-17)
+2026-01-15T09:21:03Z LOG   db: checkpoint complete: wrote 669 buffers
+2026-01-15T09:21:06Z LOG   db: checkpoint complete: wrote 777 buffers
+2026-01-15T09:21:09Z FATAL db: password authentication failed for user "payments" (client worker-11)
+2026-01-15T09:21:12Z LOG   db: checkpoint complete: wrote 705 buffers
+2026-01-15T09:21:15Z LOG   db: checkpoint complete: wrote 281 buffers
+2026-01-15T09:21:18Z FATAL db: password authentication failed for user "payments" (client worker-39)
+2026-01-15T09:21:21Z LOG   db: checkpoint complete: wrote 25 buffers
+2026-01-15T09:21:24Z LOG   db: checkpoint complete: wrote 871 buffers
+2026-01-15T09:21:27Z FATAL db: password authentication failed for user "payments" (client worker-33)
+2026-01-15T09:21:30Z LOG   db: checkpoint complete: wrote 346 buffers
+2026-01-15T09:21:33Z LOG   db: checkpoint complete: wrote 398 buffers
+2026-01-15T09:21:36Z FATAL db: password authentication failed for user "payments" (client worker-25)
+2026-01-15T09:21:39Z LOG   db: checkpoint complete: wrote 888 buffers
+2026-01-15T09:21:42Z LOG   db: checkpoint complete: wrote 594 buffers
+2026-01-15T09:21:45Z FATAL db: password authentication failed for user "payments" (client worker-22)
+2026-01-15T09:21:48Z LOG   db: checkpoint complete: wrote 89 buffers
+2026-01-15T09:21:51Z LOG   db: checkpoint complete: wrote 158 buffers
+2026-01-15T09:21:54Z FATAL db: password authentication failed for user "payments" (client worker-13)
+2026-01-15T09:21:57Z LOG   db: checkpoint complete: wrote 363 buffers
+2026-01-15T09:22:00Z LOG   db: checkpoint complete: wrote 41 buffers
+2026-01-15T09:22:03Z FATAL db: password authentication failed for user "payments" (client worker-32)
+2026-01-15T09:22:06Z LOG   db: checkpoint complete: wrote 764 buffers
+2026-01-15T09:22:09Z LOG   db: checkpoint complete: wrote 790 buffers
+2026-01-15T09:22:12Z FATAL db: password authentication failed for user "payments" (client worker-36)
+2026-01-15T09:22:15Z LOG   db: checkpoint complete: wrote 898 buffers
+2026-01-15T09:22:18Z LOG   db: checkpoint complete: wrote 220 buffers
+2026-01-15T09:22:21Z FATAL db: password authentication failed for user "payments" (client worker-11)
+2026-01-15T09:22:24Z LOG   db: checkpoint complete: wrote 854 buffers
+2026-01-15T09:22:27Z LOG   db: checkpoint complete: wrote 145 buffers

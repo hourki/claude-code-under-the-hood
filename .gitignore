@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.DS_Store
+*.log
+site/
+.venv/
+labs/notes-mcp/notes*.json
+labs/hooks/tool-log.txt
+!labs/subagents/logs/*.log

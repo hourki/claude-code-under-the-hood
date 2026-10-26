@@ -1,0 +1,18 @@
+{
+  "name": "hooks-lab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Two Claude Code hooks in TypeScript: one blocks, one observes.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "lint": "tsc --noEmit",
+    "test": "node --test dist/danger.test.js",
+    "print-settings": "node dist/print-settings.js"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "typescript": "^7.0.2"
+  }
+}

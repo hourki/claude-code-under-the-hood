@@ -1,0 +1,75 @@
+site_name: Claude Code under the hood
+site_url: https://hourki.github.io/claude-code-under-the-hood/
+repo_url: https://github.com/hourki/claude-code-under-the-hood
+docs_dir: chapters
+
+theme:
+  name: materialx
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+markdown_extensions:
+  - tables
+  - md_in_html
+
+plugins:
+  - search
+  - mkdocs_quiz
+
+validation:
+  anchors: warn
+
+nav:
+  - Learning path: README.md
+  - Understand:
+      - 00 Foundations:
+          - Lesson: 00-foundations/README.md
+          - Quiz: 00-foundations/quiz.md
+      - 01 Runtime lifecycle:
+          - Lesson: 01-runtime-lifecycle/README.md
+          - Quiz: 01-runtime-lifecycle/quiz.md
+      - 02 Settings and defaults:
+          - Lesson: 02-settings-and-defaults/README.md
+          - Quiz: 02-settings-and-defaults/quiz.md
+      - 03 Context engineering:
+          - Lesson: 03-context-engineering/README.md
+          - Quiz: 03-context-engineering/quiz.md
+  - Build:
+      - 04 Permissions:
+          - Lesson: 04-permissions/README.md
+          - Quiz: 04-permissions/quiz.md
+      - 05 Hooks:
+          - Lesson: 05-hooks-hands-on/README.md
+          - Quiz: 05-hooks-hands-on/quiz.md
+      - 06 Skills and plugins:
+          - Lesson: 06-skills-and-plugins/README.md
+          - Quiz: 06-skills-and-plugins/quiz.md
+      - 07 Subagents:
+          - Lesson: 07-subagents/README.md
+          - Quiz: 07-subagents/quiz.md
+      - 08 MCP fundamentals:
+          - Lesson: 08-mcp-fundamentals/README.md
+          - Quiz: 08-mcp-fundamentals/quiz.md
+      - 09 Build an MCP server:
+          - Lesson: 09-build-an-mcp-server/README.md
+          - Quiz: 09-build-an-mcp-server/quiz.md
+  - Secure:
+      - 10 Control layers:
+          - Lesson: 10-control-layers/README.md
+          - Quiz: 10-control-layers/quiz.md
+      - 11 MCP security:
+          - Lesson: 11-mcp-security/README.md
+          - Quiz: 11-mcp-security/quiz.md
+  - Ship:
+      - 12 Capstone plugin:
+          - Lesson: 12-capstone-plugin/README.md
+          - Quiz: 12-capstone-plugin/quiz.md

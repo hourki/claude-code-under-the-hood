@@ -1,0 +1,27 @@
+{
+  "name": "notes-mcp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A tiny MCP server that keeps notes in one JSON file.",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/stdio.js",
+  "scripts": {
+    "build": "tsc",
+    "lint": "tsc --noEmit",
+    "start": "node dist/stdio.js",
+    "start:http": "node dist/http.js",
+    "list": "node dist/list.js",
+    "demo": "node dist/wire-demo.js",
+    "test": "node --test dist/notes.test.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/node": "^2.1.2",
+    "@modelcontextprotocol/server": "^2.4.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "typescript": "^7.0.2"
+  }
+}
