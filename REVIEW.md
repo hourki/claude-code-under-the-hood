@@ -2,7 +2,7 @@
 
 Temporary file: delete before merging.
 
-Every factual claim in chapters 00–12 was checked against the official Claude Code docs (https://code.claude.com/docs/en/) and the MCP spec 2026-07-28 (https://modelcontextprotocol.io/specification/2026-07-28). Totals: 309 ✅ verified, 39 ❌ wrong (fixed), 6 ⚠️ unverifiable (removed or reworded as uncertain). Hands-on steps that need a live Claude session (for example `/context` totals and the subagent panel) were checked by reading only.
+Every factual claim in chapters 00–12 was checked against the official Claude Code docs (https://code.claude.com/docs/en/) and the MCP spec 2026-07-28 (https://modelcontextprotocol.io/specification/2026-07-28). Totals: 319 ✅ verified, 39 ❌ wrong (fixed), 6 ⚠️ unverifiable (removed or reworded as uncertain). Hands-on steps that need a live Claude session (for example `/context` totals and the subagent panel) were checked by reading only.
 
 | Chapter | Claim | Status | Doc link | Fix applied |
 |---|---|---|---|---|
@@ -360,3 +360,13 @@ Every factual claim in chapters 00–12 was checked against the official Claude 
 | 12 | Quiz 1-4 answers | ✅ verified | same sources | — |
 | 12 | Links to Ch05, Ch06 `#plugins`, Ch09, Ch11 `#checklist-the-notes-server`; GitHub lab URL | ✅ verified | chapter headings + `git ls-tree` | — |
 | 09-12 | Personal data (names, emails, paths, clusters) | ✅ verified | grep of all 8 files | None found |
+| 03 | Full conversation is sent with every request, caching makes repeats cheaper (new "Watch your token spend" section) | ✅ verified | https://code.claude.com/docs/en/costs#why-usage-climbs-in-a-long-session | — |
+| 03 | `/context` shows what fills the window (new "Watch your token spend" section) | ✅ verified | https://code.claude.com/docs/en/commands | — |
+| 03 | `/usage` shows session cost and plan usage limits, `/cost` is an alias (new "Watch your token spend" section) | ✅ verified | https://code.claude.com/docs/en/commands | — |
+| 03 | On Pro or Max the cost figure is not the bill, watch plan usage bars (new "Watch your token spend" section) | ✅ verified | https://code.claude.com/docs/en/costs#using-the-usage-command | — |
+| 03 | Root `CLAUDE.md` loads every session, even for unrelated work (new "Watch your token spend" section) | ✅ verified | https://code.claude.com/docs/en/costs#move-instructions-from-claude-md-to-skills | — |
+| 03 | A subagent's own requests count toward usage (new "Watch your token spend" section) | ✅ verified | https://code.claude.com/docs/en/costs#delegate-verbose-operations-to-subagents | — |
+| 03 | `/compact` reads the conversation it summarizes (new "Watch your token spend" section) | ✅ verified | https://code.claude.com/docs/en/costs#why-usage-climbs-in-a-long-session | — |
+| 03 | After compaction Claude Code re-reads up to 5 recent files (new "Watch your token spend" section) | ✅ verified | https://code.claude.com/docs/en/context-window#what-survives-compaction | — |
+| 03 | `/clear` costs nothing (new "Watch your token spend" section) | ✅ verified | https://code.claude.com/docs/en/costs#why-usage-climbs-in-a-long-session | — |
+| 03 | Skills load only when invoked (new "Watch your token spend" section) | ✅ verified | https://code.claude.com/docs/en/costs#move-instructions-from-claude-md-to-skills | — |

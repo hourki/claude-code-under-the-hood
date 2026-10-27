@@ -87,7 +87,29 @@ A path-scoped rule is an instruction that loads only when Claude reads or edits 
 
 - `@imports` in `CLAUDE.md`, like `@docs/runbook.md`, load in full with it. They aren't lazy.
 - A large MCP result triggers a warning above 10,000 tokens and is capped at 25,000 by default (`MAX_MCP_OUTPUT_TOKENS`).
-- `/context` shows what uses space, and `/compact` compacts now. Compact between tasks, not in the middle of one.
+- `/compact` compacts now. Compact between tasks, not in the middle of one.
+
+## Watch your token spend
+
+Claude Code sends your full conversation with every request, so a big context costs you on every turn, not just once. Prompt caching makes the repeated part cheaper, not free.
+
+| Run | To see |
+|---|---|
+| `/context` | What fills the window right now |
+| `/usage` (alias `/cost`) | Your session's token usage and cost, and your plan's usage limits. On a Pro or Max plan, the cost figure isn't your bill, so watch the plan usage bars. |
+
+What costs the most:
+
+- **Large tool results.** They stay in context until compaction, and every later request carries them.
+- **A long root `CLAUDE.md`.** It loads every session, even for unrelated work.
+- **Subagents.** The summary lands in your context, and the subagent's own requests count toward your usage too.
+- **Compaction.** `/compact` reads the whole conversation to summarize it, then Claude Code re-reads up to 5 recent files.
+
+Three habits that cut spend:
+
+1. Run `/clear` when you switch to unrelated work. It costs nothing, while compacting a large context is itself a large request.
+2. Move workflow steps from `CLAUDE.md` into skills, which load only when they run.
+3. Send verbose work, like test runs and log reading, to a subagent, and ask for a short answer.
 
 ## Common mistakes
 
@@ -115,3 +137,5 @@ Test yourself with the [quiz](quiz.md): two sets of 10 questions.
 - Claude Code MCP (output limits, tool search): https://code.claude.com/docs/en/mcp
 - Best practices (a focused context): https://code.claude.com/docs/en/best-practices#what-you-can-stop-doing
 - Hooks (which output reaches Claude): https://code.claude.com/docs/en/hooks#exit-code-0
+- Manage costs (`/usage`, reducing token usage): https://code.claude.com/docs/en/costs
+- Commands (`/context`, `/usage`): https://code.claude.com/docs/en/commands

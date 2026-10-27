@@ -43,7 +43,7 @@ You need [Claude Code](https://code.claude.com/docs/en/overview), a [Claude subs
 | 00 | [Foundations](chapters/00-foundations/README.md) | Beginner | 3 min | — | [Quiz](chapters/00-foundations/quiz.md) | ✅ Verified |
 | 01 | [Runtime lifecycle](chapters/01-runtime-lifecycle/README.md) | Beginner | 4 min | — | [Quiz](chapters/01-runtime-lifecycle/quiz.md) | ✅ Verified |
 | 02 | [Settings and defaults](chapters/02-settings-and-defaults/README.md) | Beginner | 7 min | In the chapter | [Quiz](chapters/02-settings-and-defaults/quiz.md) | ✅ Verified |
-| 03 | [Context engineering](chapters/03-context-engineering/README.md) | Beginner | 4 min | — | [Quiz](chapters/03-context-engineering/quiz.md) | ✅ Verified |
+| 03 | [Context engineering](chapters/03-context-engineering/README.md) | Beginner | 5 min | — | [Quiz](chapters/03-context-engineering/quiz.md) | ✅ Verified |
 | 04 | [Permissions](chapters/04-permissions/README.md) | Intermediate | 5 min | In the chapter | [Quiz](chapters/04-permissions/quiz.md) | ✅ Verified |
 | 05 | [Hooks](chapters/05-hooks-hands-on/README.md) | Intermediate | 5 min | [hooks](labs/hooks) | [Quiz](chapters/05-hooks-hands-on/quiz.md) | ✅ Verified |
 | 06 | [Skills and plugins](chapters/06-skills-and-plugins/README.md) | Intermediate | 5 min | [readme-tools](labs/readme-tools) | [Quiz](chapters/06-skills-and-plugins/quiz.md) | ✅ Verified |
