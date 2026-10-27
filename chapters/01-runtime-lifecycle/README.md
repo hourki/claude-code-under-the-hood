@@ -121,7 +121,7 @@ Claude matches your prompt to tool names and descriptions. There's no routing ta
 - MCP tools run in their server, not in the host.
 - Enforced rules hold, whatever the model reasons.
 
-Test yourself with the [quiz](quiz.md): 10 open questions and a 5-question retest.
+Test yourself with the [quiz](quiz.md): 10 questions and a 5-question retest.
 
 ## Sources
 
