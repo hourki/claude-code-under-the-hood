@@ -24,4 +24,4 @@ A hands-on course on how AI coding agents work inside, built around Claude Code.
 
 "Time" is the reading only. Hands-on steps take longer.
 
-All you need for the hands-on parts is [Claude Code](https://code.claude.com/docs/en/overview) and [Node.js](https://nodejs.org) LTS (v22 or later).
+For the hands-on parts you need [Claude Code](https://code.claude.com/docs/en/overview), a [Claude subscription](https://claude.com/pricing) or [Anthropic Console](https://platform.claude.com/) account (or a supported [third-party provider](https://code.claude.com/docs/en/third-party-integrations)), and [Node.js](https://nodejs.org) LTS (v22 or later).

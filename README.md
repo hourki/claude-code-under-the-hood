@@ -6,7 +6,7 @@ By the end of this course, you'll know what an AI coding agent does with every r
 
 Anyone who uses an AI coding agent, or is about to, and wants to know how it works inside. You don't need to know how AI works. If you can open a terminal and run a command, you can follow every step.
 
-You need [Claude Code](https://code.claude.com/docs/en/overview) and [Node.js](https://nodejs.org) LTS (v22 or later). Nothing else: no server, no extra account, no API key.
+You need [Claude Code](https://code.claude.com/docs/en/overview), a [Claude subscription](https://claude.com/pricing) or [Anthropic Console](https://platform.claude.com/) account (or a supported [third-party provider](https://code.claude.com/docs/en/third-party-integrations)), and [Node.js](https://nodejs.org) LTS (v22 or later). No server needed.
 
 ## What you'll learn
 
