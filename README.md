@@ -2,6 +2,26 @@
 
 By the end of this course, you'll know what an AI coding agent does with every request, and you'll have built your own hooks, skills, subagent, MCP server and plugin for Claude Code.
 
+```
+START (once)  Host loads CLAUDE.md, memory, settings
+              Host connects MCP servers → tools/list
+                         ↓
+PROMPT        Your text → context
+                         ↓
+         ┌──▶ MODEL reasons ──── done? ──▶ FINAL ANSWER
+         │         ↓ needs action
+         │    MODEL requests tool {name, args}
+         │         ↓
+         │    HOST checks: hook → rules → mode → ask you
+         │         ↓
+         │    HOST runs it: built-in (Bash, Read)
+         │                  or MCP: tools/call → server
+         │         ↓
+         └─── Result → context
+```
+
+The model only requests. The host does everything else.
+
 ## Who it's for
 
 Anyone who uses an AI coding agent, or is about to, and wants to know how it works inside. You don't need to know how AI works. If you can open a terminal and run a command, you can follow every step.
