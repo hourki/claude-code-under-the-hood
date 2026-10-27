@@ -23,7 +23,6 @@ markdown_extensions:
 
 plugins:
   - search
-  - mkdocs_quiz
 
 validation:
   anchors: warn

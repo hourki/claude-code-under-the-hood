@@ -20,19 +20,19 @@ You need [Claude Code](https://code.claude.com/docs/en/overview), a [Claude subs
 
 | # | Chapter | Level | Time | Lab | Quiz |
 |---|---|---|---|---|---|
-| 00 | [Foundations](chapters/00-foundations/README.md) | Beginner | 3 min | — | [Quiz](https://hourki.github.io/claude-code-under-the-hood/00-foundations/quiz/) |
-| 01 | [Runtime lifecycle](chapters/01-runtime-lifecycle/README.md) | Beginner | 4 min | — | [Quiz](https://hourki.github.io/claude-code-under-the-hood/01-runtime-lifecycle/quiz/) |
-| 02 | [Settings and defaults](chapters/02-settings-and-defaults/README.md) | Beginner | 7 min | In the chapter | [Quiz](https://hourki.github.io/claude-code-under-the-hood/02-settings-and-defaults/quiz/) |
-| 03 | [Context engineering](chapters/03-context-engineering/README.md) | Beginner | 4 min | — | [Quiz](https://hourki.github.io/claude-code-under-the-hood/03-context-engineering/quiz/) |
-| 04 | [Permissions](chapters/04-permissions/README.md) | Intermediate | 5 min | In the chapter | [Quiz](https://hourki.github.io/claude-code-under-the-hood/04-permissions/quiz/) |
-| 05 | [Hooks](chapters/05-hooks-hands-on/README.md) | Intermediate | 5 min | [hooks](labs/hooks) | [Quiz](https://hourki.github.io/claude-code-under-the-hood/05-hooks-hands-on/quiz/) |
-| 06 | [Skills and plugins](chapters/06-skills-and-plugins/README.md) | Intermediate | 5 min | [readme-tools](labs/readme-tools) | [Quiz](https://hourki.github.io/claude-code-under-the-hood/06-skills-and-plugins/quiz/) |
-| 07 | [Subagents](chapters/07-subagents/README.md) | Intermediate | 6 min | [subagents](labs/subagents) | [Quiz](https://hourki.github.io/claude-code-under-the-hood/07-subagents/quiz/) |
-| 08 | [MCP fundamentals](chapters/08-mcp-fundamentals/README.md) | Intermediate | 6 min | [notes-mcp](labs/notes-mcp) | [Quiz](https://hourki.github.io/claude-code-under-the-hood/08-mcp-fundamentals/quiz/) |
-| 09 | [Build an MCP server](chapters/09-build-an-mcp-server/README.md) | Hands-on | 6 min | [notes-mcp](labs/notes-mcp) | [Quiz](https://hourki.github.io/claude-code-under-the-hood/09-build-an-mcp-server/quiz/) |
-| 10 | [Control layers](chapters/10-control-layers/README.md) | Intermediate | 4 min | — | [Quiz](https://hourki.github.io/claude-code-under-the-hood/10-control-layers/quiz/) |
-| 11 | [MCP security](chapters/11-mcp-security/README.md) | Hands-on | 6 min | [notes-mcp](labs/notes-mcp) | [Quiz](https://hourki.github.io/claude-code-under-the-hood/11-mcp-security/quiz/) |
-| 12 | [Capstone: one plugin](chapters/12-capstone-plugin/README.md) | Hands-on | 4 min | [notes-mcp](labs/notes-mcp) | [Quiz](https://hourki.github.io/claude-code-under-the-hood/12-capstone-plugin/quiz/) |
+| 00 | [Foundations](chapters/00-foundations/README.md) | Beginner | 3 min | — | [Quiz](chapters/00-foundations/quiz.md) |
+| 01 | [Runtime lifecycle](chapters/01-runtime-lifecycle/README.md) | Beginner | 4 min | — | [Quiz](chapters/01-runtime-lifecycle/quiz.md) |
+| 02 | [Settings and defaults](chapters/02-settings-and-defaults/README.md) | Beginner | 7 min | In the chapter | [Quiz](chapters/02-settings-and-defaults/quiz.md) |
+| 03 | [Context engineering](chapters/03-context-engineering/README.md) | Beginner | 4 min | — | [Quiz](chapters/03-context-engineering/quiz.md) |
+| 04 | [Permissions](chapters/04-permissions/README.md) | Intermediate | 5 min | In the chapter | [Quiz](chapters/04-permissions/quiz.md) |
+| 05 | [Hooks](chapters/05-hooks-hands-on/README.md) | Intermediate | 5 min | [hooks](labs/hooks) | [Quiz](chapters/05-hooks-hands-on/quiz.md) |
+| 06 | [Skills and plugins](chapters/06-skills-and-plugins/README.md) | Intermediate | 5 min | [readme-tools](labs/readme-tools) | [Quiz](chapters/06-skills-and-plugins/quiz.md) |
+| 07 | [Subagents](chapters/07-subagents/README.md) | Intermediate | 6 min | [subagents](labs/subagents) | [Quiz](chapters/07-subagents/quiz.md) |
+| 08 | [MCP fundamentals](chapters/08-mcp-fundamentals/README.md) | Intermediate | 6 min | [notes-mcp](labs/notes-mcp) | [Quiz](chapters/08-mcp-fundamentals/quiz.md) |
+| 09 | [Build an MCP server](chapters/09-build-an-mcp-server/README.md) | Hands-on | 6 min | [notes-mcp](labs/notes-mcp) | [Quiz](chapters/09-build-an-mcp-server/quiz.md) |
+| 10 | [Control layers](chapters/10-control-layers/README.md) | Intermediate | 4 min | — | [Quiz](chapters/10-control-layers/quiz.md) |
+| 11 | [MCP security](chapters/11-mcp-security/README.md) | Hands-on | 6 min | [notes-mcp](labs/notes-mcp) | [Quiz](chapters/11-mcp-security/quiz.md) |
+| 12 | [Capstone: one plugin](chapters/12-capstone-plugin/README.md) | Hands-on | 4 min | [notes-mcp](labs/notes-mcp) | [Quiz](chapters/12-capstone-plugin/quiz.md) |
 
 Time is the reading only. Hands-on steps take longer.
 
@@ -54,7 +54,7 @@ claude doctor
 
 ## More
 
-- **Site with clickable quizzes:** https://hourki.github.io/claude-code-under-the-hood/. On GitHub, a quiz file shows its answers, so try the site first.
+- **Site:** https://hourki.github.io/claude-code-under-the-hood/
 - **Contributing:** found a mistake or an outdated fact? Open an issue or a pull request. To preview the site, run `python3 -m venv .venv`, `.venv/bin/pip install -r requirements-docs.txt` and `.venv/bin/properdocs serve -f mkdocs.yml`.
 - **Accuracy:** every chapter was checked against the official docs on 2026-10-26. Claude Code and MCP change fast, so trust the docs when they disagree.
 - **License:** [MIT](LICENSE)
