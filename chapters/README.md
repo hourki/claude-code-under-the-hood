@@ -18,7 +18,7 @@ A hands-on course on how AI coding agents work inside, built around Claude Code.
 | 09 | [Build an MCP server](09-build-an-mcp-server/README.md) | Hands-on | 6 min | 04, 08 | The notes MCP server, over stdio and HTTP | [Quiz](09-build-an-mcp-server/quiz.md) |
 | **Secure** | | | | | | |
 | 10 | [Control layers](10-control-layers/README.md) | Intermediate | 4 min | 04, 05 | — | [Quiz](10-control-layers/quiz.md) |
-| 11 | [MCP security](11-mcp-security/README.md) | Hands-on | 6 min | 09, 10 | A hardened notes server | [Quiz](11-mcp-security/quiz.md) |
+| 11 | [MCP security](11-mcp-security/README.md) | Hands-on | 7 min | 09, 10 | A hardened notes server | [Quiz](11-mcp-security/quiz.md) |
 | **Ship** | | | | | | |
 | 12 | [Capstone: one plugin](12-capstone-plugin/README.md) | Hands-on | 4 min | 05, 06, 09 | The `notes-kit` plugin: server, skill and hook | [Quiz](12-capstone-plugin/quiz.md) |
 

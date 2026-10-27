@@ -51,7 +51,7 @@ You need [Claude Code](https://code.claude.com/docs/en/overview), a [Claude subs
 | 08 | [MCP fundamentals](chapters/08-mcp-fundamentals/README.md) | Intermediate | 6 min | [notes-mcp](labs/notes-mcp) | [Quiz](chapters/08-mcp-fundamentals/quiz.md) | ✅ Verified |
 | 09 | [Build an MCP server](chapters/09-build-an-mcp-server/README.md) | Hands-on | 6 min | [notes-mcp](labs/notes-mcp) | [Quiz](chapters/09-build-an-mcp-server/quiz.md) | ✅ Verified |
 | 10 | [Control layers](chapters/10-control-layers/README.md) | Intermediate | 4 min | — | [Quiz](chapters/10-control-layers/quiz.md) | ✅ Verified |
-| 11 | [MCP security](chapters/11-mcp-security/README.md) | Hands-on | 6 min | [notes-mcp](labs/notes-mcp) | [Quiz](chapters/11-mcp-security/quiz.md) | ✅ Verified |
+| 11 | [MCP security](chapters/11-mcp-security/README.md) | Hands-on | 7 min | [notes-mcp](labs/notes-mcp) | [Quiz](chapters/11-mcp-security/quiz.md) | ✅ Verified |
 | 12 | [Capstone: one plugin](chapters/12-capstone-plugin/README.md) | Hands-on | 4 min | [notes-mcp](labs/notes-mcp) | [Quiz](chapters/12-capstone-plugin/quiz.md) | ✅ Verified |
 
 ✅ Verified: every claim checked against the official docs (see [Accuracy](chapters/README.md#accuracy)). 🚧 Draft: not fully checked yet. Steps inside a Claude session were checked by reading, not by running them.
