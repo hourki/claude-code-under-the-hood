@@ -61,7 +61,7 @@ So the server doesn't resend its tool list on each call. Each use is one `tools/
 The model writes this (Anthropic API format):
 
 ```json
-{"type": "tool_use", "name": "mcp__github__list_commits", "input": {"repo": "payments"}}
+{"type": "tool_use", "id": "toolu_01A09q90qw90lq917835lq9", "name": "mcp__github__list_commits", "input": {"repo": "payments"}}
 ```
 
 The host's MCP client turns it into this JSON-RPC message for the server:
@@ -132,3 +132,4 @@ Test yourself with the [quiz](quiz.md): 10 open questions and a 5-question retes
 - Permissions: https://code.claude.com/docs/en/permissions
 - Hooks: https://code.claude.com/docs/en/hooks
 - MCP tools: https://modelcontextprotocol.io/specification/2026-07-28/server/tools
+- Anthropic API, handle tool calls: https://platform.claude.com/docs/en/agents-and-tools/tool-use/handle-tool-calls

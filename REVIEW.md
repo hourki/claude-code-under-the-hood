@@ -2,7 +2,7 @@
 
 Temporary file: delete before merging.
 
-Every factual claim in chapters 00–12 was checked against the official Claude Code docs (https://code.claude.com/docs/en/) and the MCP spec 2026-07-28 (https://modelcontextprotocol.io/specification/2026-07-28). Totals: 310 ✅ verified, 38 ❌ wrong (fixed), 6 ⚠️ unverifiable (removed or reworded as uncertain). Hands-on steps that need a live Claude session (for example `/context` totals and the subagent panel) were checked by reading only.
+Every factual claim in chapters 00–12 was checked against the official Claude Code docs (https://code.claude.com/docs/en/) and the MCP spec 2026-07-28 (https://modelcontextprotocol.io/specification/2026-07-28). Totals: 309 ✅ verified, 39 ❌ wrong (fixed), 6 ⚠️ unverifiable (removed or reworded as uncertain). Hands-on steps that need a live Claude session (for example `/context` totals and the subagent panel) were checked by reading only.
 
 | Chapter | Claim | Status | Doc link | Fix applied |
 |---|---|---|---|---|
@@ -29,7 +29,7 @@ Every factual claim in chapters 00–12 was checked against the official Claude 
 | 01 | "Built-in tools are always loaded" | ❌ wrong | https://code.claude.com/docs/en/changelog | Changed to "Some built-in tools, like `WebFetch`, are deferred the same way" (doc: "deferred tools (WebSearch, WebFetch, etc.)") |
 | 01 | `tools/call` JSON-RPC shape with `name` and `arguments` | ✅ verified | https://modelcontextprotocol.io/specification/2026-07-28/server/tools | — |
 | 01 | `mcp__<server>__<tool>` is Claude Code's naming | ✅ verified | https://code.claude.com/docs/en/permissions#mcp | — |
-| 01 | `tool_use` block has `name` and `input` | ✅ verified | https://code.claude.com/docs/en/hooks | — (simplified: the real block also has an `id`) |
+| 01 | `tool_use` block has `name` and `input` | ❌ wrong | https://platform.claude.com/docs/en/agents-and-tools/tool-use/handle-tool-calls | Added the missing `id` field (doc example: `"type": "tool_use", "id": "toolu_…", "name": …, "input": …`) |
 | 01 | Claude picks tools from your prompt, no routing table | ✅ verified | https://code.claude.com/docs/en/how-claude-code-works | — |
 | 01 | `Bash(gh *)` deny rule syntax | ✅ verified | https://code.claude.com/docs/en/permissions#wildcard-patterns | — |
 | 01 | Quiz Q3: discovery can come from a cache | ✅ verified | https://code.claude.com/docs/en/mcp#server-status-detail | — |
