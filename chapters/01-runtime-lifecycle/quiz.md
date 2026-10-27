@@ -58,7 +58,7 @@ Answer each question first. Scored questions check themselves; open questions ha
 <details markdown="1"><summary>Answer</summary>
 
 - **Same:** the model requests, hooks and rules apply, the result goes into context.
-- **Different:** a built-in runs inside the host and is always loaded (never deferred). For MCP, the host sends JSON-RPC `tools/call` over a transport and **the server executes**.
+- **Different:** a built-in runs inside the host. For MCP, the host sends JSON-RPC `tools/call` over a transport and **the server executes**.
 
 </details>
 

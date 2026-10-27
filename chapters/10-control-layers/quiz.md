@@ -21,7 +21,7 @@ Pick an answer. The quiz checks it and shows the explanation.
 - [ ] c) the session ends
 - [ ] d) a permission prompt
 
-**b** — only exit code 2 blocks. Exit code 1 is a non-blocking error.
+**b** — by default, only exit code 2 blocks. Exit code 1 is a non-blocking error.
 </quiz>
 
 <quiz>
@@ -30,7 +30,7 @@ Pick an answer. The quiz checks it and shows the explanation.
 - [ ] a) the command runs
 - [ ] b) a prompt
 - [ ] c) it depends on the mode
-- [x] d) blocked: hooks tighten, they don't loosen
+- [x] d) blocked: a hook's allow can't override a deny rule
 
 **d** — a hook "allow" doesn't override deny or ask rules.
 </quiz>
@@ -61,7 +61,7 @@ Pick an answer. The quiz checks it and shows the explanation.
 **6.** The sandbox is on. A GitHub MCP tool deletes a branch. Is it restricted?
 
 - [ ] a) yes, all tools are
-- [x] b) no: the sandbox covers Bash only
+- [x] b) no: the sandbox covers shell commands only
 - [ ] c) yes, all network traffic is
 - [ ] d) only local servers are
 

@@ -59,7 +59,7 @@ The client can offer features to the server too. In spec `2026-07-28`:
 
 | Feature | What it does | Status |
 |---|---|---|
-| Elicitation | The server asks the user a question mid-call | Current. Servers must never ask for passwords or API keys this way. |
+| Elicitation | The server asks the user a question mid-call | Current. Servers must never ask for passwords or API keys in a form. They send you to a URL instead. |
 | Roots | Tells a server which folders to work in | Deprecated |
 | Sampling | The server asks the client's model for a completion | Deprecated |
 | Logging | Log messages over MCP | Deprecated. On stdio, log to stderr. |
@@ -81,7 +81,7 @@ Over HTTP, sessions are gone too, and each POST carries headers like `MCP-Protoc
 
 Versions `2025-11-25` and earlier are called "legacy", and they start with the `initialize` handshake. The `list` script uses it, which is why its output says `protocol 2025-11-25`.
 
-**Claude Code speaks both.** Its MCP client (built on MCP TypeScript SDK 2.0) asks each server which version it speaks, and keeps the legacy handshake for servers that need it.
+**Claude Code speaks both.** As of October 2026, its default MCP client (built on MCP TypeScript SDK 2.0) asks stdio and HTTP servers whether they speak `2026-07-28`, and keeps the legacy handshake for the others ([docs](https://code.claude.com/docs/en/mcp#mcp-client-runtimes)).
 
 ## Two kinds of errors
 
@@ -154,11 +154,12 @@ Test yourself with the [quiz](quiz.md): 5 questions.
 
 ## Sources
 
-Checked against these pages on 2026-10-26. If they disagree with this chapter, trust them.
+Checked against these pages on 2026-10-27. If they disagree with this chapter, trust them.
 
 - MCP architecture: https://modelcontextprotocol.io/docs/2026-07-28/learn/architecture
 - Server concepts: https://modelcontextprotocol.io/docs/2026-07-28/learn/server-concepts
 - Client concepts: https://modelcontextprotocol.io/docs/2026-07-28/learn/client-concepts
+- Elicitation: https://modelcontextprotocol.io/specification/2026-07-28/client/elicitation
 - Transports: https://modelcontextprotocol.io/specification/2026-07-28/basic/transports
 - Changelog 2026-07-28: https://modelcontextprotocol.io/specification/2026-07-28/changelog
 - Claude Code MCP: https://code.claude.com/docs/en/mcp

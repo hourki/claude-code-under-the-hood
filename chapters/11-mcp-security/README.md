@@ -30,7 +30,7 @@ The fix isn't a smarter model. It's an enforced control the text can't talk its 
 | Tool poisoning | Hidden instructions sit in a tool's name or description. The tool doesn't even need to be called: the description reaches the model with the tool list. |
 | Tool shadowing | A poisoned description targets another server's tools |
 | Rug pull | A server changes its tool definitions after you approved it |
-| An overreaching server | It reads or sends more than its job needs |
+| An overcollecting server | It reads or sends more than its job needs |
 | A compromised dependency | Bad code arrives through the server's own packages |
 
 The MCP security guide uses these names. Every server you add shares the same model context, so one bad server can steer how the agent uses all the others. Fewer servers means fewer ways in.
@@ -41,10 +41,10 @@ The MCP security guide uses these names. Every server you add shares the same mo
 |---|---|
 | You | Pick servers with care. Read their tool lists before you rely on them. |
 | Claude Code | Asks before using a project's `.mcp.json` servers in an interactive session. Applies your permission rules to MCP tools. |
-| The server author | Must validate inputs and enforce access control. Should rate-limit calls and clean outputs. |
+| The server author | Must validate inputs, enforce access control, rate-limit calls and clean outputs |
 | The OS | Isolation in a container or VM is the strongest single fix |
 
-Claude Code doesn't filter injected text out of tool results, and it doesn't ask again when a server changes its tools. Its docs say plainly that "no system is completely immune".
+Claude Code doesn't remove injected text from tool results (in auto mode, a server-side probe only flags suspicious content). When a server changes its tools, Claude Code just fetches the new list. Its docs say plainly that "no system is completely immune".
 
 Two more facts to know:
 
@@ -149,11 +149,13 @@ Test yourself with the [quiz](quiz.md): 5 questions.
 
 ## Sources
 
-Checked against these pages on 2026-10-26. If they disagree with this chapter, trust them.
+Checked against these pages on 2026-10-27. If they disagree with this chapter, trust them.
 
 - Local server security: https://modelcontextprotocol.io/docs/2026-07-28/tutorials/security/local-server-security
 - Security best practices: https://modelcontextprotocol.io/docs/2026-07-28/tutorials/security/security_best_practices
 - Authorization security considerations: https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization/security-considerations
 - Tools, security considerations: https://modelcontextprotocol.io/specification/2026-07-28/server/tools#security-considerations
 - Claude Code security: https://code.claude.com/docs/en/security
+- Claude Code MCP (project scope, dynamic tool updates): https://code.claude.com/docs/en/mcp#project-scope
+- Auto mode (tool result probe): https://code.claude.com/docs/en/permission-modes#how-auto-mode-evaluates-actions
 - Permissions (MCP rules): https://code.claude.com/docs/en/permissions#mcp

@@ -112,14 +112,14 @@ Try these, one at a time:
 
 | You type | What happens |
 |---|---|
-| *"Add a note titled groceries: milk, eggs, coffee."* | Claude calls `mcp__notes__add_note`. You get a permission prompt the first time. |
+| *"Add a note titled groceries: milk, eggs, coffee."* | Claude calls `mcp__notes__add_note`. In Manual mode, you get a permission prompt the first time. |
 | *"Search my notes for coffee."* | Claude calls `mcp__notes__search_notes`. |
 | `@notes:notes://all` | Attaches the resource: every note, as Markdown. |
 | `/mcp__notes__summarize_notes` | Runs the prompt. It also shows in the `/` menu as `/notes:summarize_notes (MCP)`. |
 
 Open `notes.json` in the folder. You should see your groceries note in it.
 
-Tired of the prompt for read-only tools? Add this to `.claude/settings.json`:
+In Manual mode, tired of the prompt for read-only tools? Add this to `.claude/settings.json`:
 
 ```json
 { "permissions": { "allow": ["mcp__notes__list_notes", "mcp__notes__search_notes"] } }
@@ -258,10 +258,11 @@ Test yourself with the [quiz](quiz.md): 5 questions.
 
 ## Sources
 
-Checked against these pages on 2026-10-26. If they disagree with this chapter, trust them.
+Checked against these pages on 2026-10-27. If they disagree with this chapter, trust them.
 
 - MCP quickstart, build a server: https://modelcontextprotocol.io/docs/2026-07-28/develop/build-server
 - MCP TypeScript SDK: https://github.com/modelcontextprotocol/typescript-sdk
 - MCP stdio transport: https://modelcontextprotocol.io/specification/2026-07-28/basic/transports/stdio
 - MCP Streamable HTTP transport: https://modelcontextprotocol.io/specification/2026-07-28/basic/transports/streamable-http
 - Claude Code MCP: https://code.claude.com/docs/en/mcp
+- Permission modes: https://code.claude.com/docs/en/permission-modes#which-mode-a-session-starts-in

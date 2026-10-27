@@ -24,9 +24,9 @@ Reply in at most 10 lines, in exactly this format:
 ...
 ```
 
-That's [`labs/subagents/.claude/agents/log-scanner.md`](https://github.com/hourki/claude-code-under-the-hood/tree/main/labs/subagents), trimmed. The frontmatter says who it is and which tools it may use. The body becomes its system prompt: the standing instructions it follows.
+That's [`labs/subagents/.claude/agents/log-scanner.md`](https://github.com/hourki/claude-code-under-the-hood/blob/main/labs/subagents/.claude/agents/log-scanner.md), trimmed. The frontmatter says who it is and which tools it may use. The body becomes its system prompt: the standing instructions it follows.
 
-The strict reply format matters, because no setting caps how long a subagent's report is. Only the prompt can.
+The strict reply format matters, because no subagent field caps how long its report is. Only the prompt can.
 
 ## What a subagent sees
 
@@ -109,7 +109,7 @@ claude
 
 **3. Delegate.** Ask: *"Use the log-scanner subagent to find why checkout requests fail."*
 
-You should see: a `log-scanner(...)` row while it works. If it runs in the background, Claude tells you and the report arrives a bit later. The report follows the 10-line format and points at a password problem between the worker and the database.
+You should see: a row for `log-scanner` in the panel below the prompt while it works. If it runs in the background, Claude tells you and the report arrives a bit later. The report follows the 10-line format and points at a password problem between the worker and the database.
 
 **4. Measure again.** Run `/context`.
 
@@ -128,7 +128,7 @@ Stay in the main conversation for back-and-forth work, quick changes, and steps 
 | Mistake | Reality |
 |---|---|
 | "It knows what we discussed" | It sees only the task message. Put the facts it needs there. |
-| No reply format | Nothing caps the report's length but your prompt. |
+| No reply format | No subagent field caps the report's length. Your prompt does. |
 | Expecting Claude to wait | Subagents run in the background by default. The report comes later. |
 | Many parallel subagents for a sequence of steps | Parallel work suits independent jobs. Keep a sequence in one place. |
 
@@ -143,7 +143,7 @@ Test yourself with the [quiz](quiz.md): 5 questions.
 
 ## Sources
 
-Checked against these pages on 2026-10-26. If they disagree with this chapter, trust them.
+Checked against these pages on 2026-10-27. If they disagree with this chapter, trust them.
 
 - Subagents: https://code.claude.com/docs/en/sub-agents
 - Agent teams: https://code.claude.com/docs/en/agent-teams

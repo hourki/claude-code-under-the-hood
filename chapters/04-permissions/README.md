@@ -68,15 +68,15 @@ A mode is the session-wide fallback for calls no rule decides.
 | `default` (shown as "Manual") | Reads only |
 | `acceptEdits` | Reads, file edits, and common file commands like `mkdir`, `mv`, `cp` in your working folders |
 | `plan` | Reads, plus commands auto mode's safety check approves when auto mode is available. Claude writes a plan but doesn't edit your files. |
-| `auto` | Everything, with a background safety check on each action |
+| `auto` | Everything, with background safety checks |
 | `dontAsk` | Reads plus pre-approved tools. Anything that would prompt is denied. |
 | `bypassPermissions` | Everything. For isolated containers and VMs only. |
 
 **Starting mode:** the `--permission-mode` flag wins, then `defaultMode`, then the built-in default from [Chapter 02](../02-settings-and-defaults/README.md#whats-on-by-default). Press `Shift+Tab` to switch modes in a session. `dontAsk` isn't in that cycle, so start it with `--permission-mode dontAsk`.
 
-**Auto mode** sends each action to a separate classifier model. It blocks actions that go beyond your request, touch infrastructure it doesn't recognize, or come from hostile content. Your ask rules still prompt, and the docs say plainly that it "does not guarantee safety".
+**Auto mode** sends each action your rules don't settle, other than reads and edits in your working folder, to a separate classifier model. It blocks actions that go beyond your request, touch infrastructure it doesn't recognize, or come from hostile content. Your ask rules still prompt, and the docs say plainly that it "does not guarantee safety".
 
-**Bypass mode** still obeys deny rules, and ask rules still prompt. Setting `auto` or `bypassPermissions` as `defaultMode` only works from `~/.claude/settings.json`. A project file can't do it.
+**Bypass mode** still obeys deny rules, and ask rules still prompt. Setting `auto` or `bypassPermissions` as `defaultMode` works only from your user or managed settings. A project or local file can't do it.
 
 ## Where pattern rules fail
 
@@ -88,7 +88,7 @@ The docs say it directly: a Bash rule isn't a security boundary.
 - A `Read` deny doesn't stop `grep -r` or a script that opens the file itself.
 - Allowing only `WebFetch` leaves the network open if Bash can run `curl`.
 
-When a rule must hold, back it with a hook or the sandbox, which check what actually runs instead of how it's spelled.
+When a rule must hold, back it with the sandbox, which limits what a command can reach however it's spelled, or with a hook that checks the full command with your own logic.
 
 ## Hands-on: watch a deny rule work
 
@@ -122,7 +122,7 @@ mkdir .claude
 }
 ```
 
-**3. Start Claude Code in Manual mode**, so every Bash command asks first. Accept the folder trust prompt if you see one.
+**3. Start Claude Code in Manual mode**, so Bash commands that aren't read-only ask first. Accept the folder trust prompt if you see one.
 
 ```bash
 claude --permission-mode default
@@ -134,7 +134,7 @@ You should see: your `Read(./.env)` deny rule, with `.claude/settings.json` as i
 
 **5. Try to read the file.** Ask: *"Read .env and tell me what's in it."*
 
-You should see: the read is blocked, and Claude says it can't read that file. If it tries `cat .env` instead, you get a permission prompt: answer **No**. That's the gap from above, because a `Read` rule doesn't cover Bash.
+You should see: the read is blocked, and Claude says it can't read that file. If it tries `cat .env` instead, that's blocked too, because `Read` rules also cover file commands Claude Code recognizes in Bash. A `grep -r` or a script that opens the file itself would still get through: that's the gap from above.
 
 **6. Remove the rule.** Change the file to `{"permissions": {"deny": []}}`, save, and ask again.
 
@@ -154,7 +154,7 @@ Test yourself with the [quiz](quiz.md): 5 questions.
 
 ## Sources
 
-Checked against these pages on 2026-10-26. If they disagree with this chapter, trust them.
+Checked against these pages on 2026-10-27. If they disagree with this chapter, trust them.
 
 - Permissions: https://code.claude.com/docs/en/permissions
 - Permission modes: https://code.claude.com/docs/en/permission-modes

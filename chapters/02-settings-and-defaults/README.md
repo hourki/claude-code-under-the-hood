@@ -27,7 +27,7 @@ This is a project settings file, `.claude/settings.json`. Settings are plain JSO
 |---|---|
 | `$schema` | Your editor can autocomplete and check the keys |
 | `allow`: `Bash(npm run lint)`, `Bash(npm run test *)` | Your everyday commands run without a prompt |
-| `deny`: `Read(./.env)`, `Read(./.env.*)` | Claude's file tools can't read your secrets files. Bash commands like `cat .env` aren't covered by `Read` rules. |
+| `deny`: `Read(./.env)`, `Read(./.env.*)` | Claude can't read your secrets files with its file tools or with Bash commands like `cat .env`. A script that opens the file itself isn't covered. |
 
 Commit it, and the whole team gets it.
 
@@ -42,7 +42,7 @@ Commit it, and the whole team gets it.
 
 `~/.claude` is the `.claude` folder in your home directory (`%USERPROFILE%\.claude` on Windows). A plain `.claude` is the folder inside your project. Managed settings come from your organization, as a system file or from an admin console.
 
-- No settings file exists after install. `~/.claude/settings.json` appears when you first change an option in `/config`, and `.claude/settings.local.json` when you first answer "Yes, and don't ask again".
+- No settings file exists after install. `~/.claude/settings.json` appears when you first change an option like the theme in `/config`, and `.claude/settings.local.json` when you first answer "Yes, and don't ask again".
 - `~/.claude.json` is a different file that Claude Code manages itself: your account, MCP servers, folder trust. Don't put `permissions`, `hooks` or `env` there.
 - `CLAUDE.md` isn't a settings file. It holds instructions for the model.
 
@@ -62,7 +62,7 @@ Three rules change how that plays out:
 
 - **Lists merge.** A list like `permissions.allow` is combined across files, not replaced. A deny rule in any file beats an allow rule in another.
 - **Environment variables follow their own rules.** For example, `ANTHROPIC_MODEL` beats `model` from any file.
-- **Some keys only work from your user file.** For example, `defaultMode: "auto"` in a project file is ignored.
+- **Some keys are ignored in project files.** For example, `defaultMode: "auto"` works only from your user or managed settings.
 
 Allow rules in a committed project file also wait until each teammate trusts the folder. Deny and ask rules apply right away.
 
@@ -72,7 +72,7 @@ As of October 2026. Defaults change, so each row links to its docs page.
 
 | Setting | Default |
 |---|---|
-| [Starting permission mode](https://code.claude.com/docs/en/permission-modes#which-mode-a-session-starts-in) | `auto` in the terminal and VS Code: Claude acts without asking, while a separate safety check reviews each action. `default` (ask before most actions) for `claude -p` and the SDK. |
+| [Starting permission mode](https://code.claude.com/docs/en/permission-modes#which-mode-a-session-starts-in) | `auto` in the terminal and VS Code: Claude acts without asking, while a separate safety check reviews actions before they run. `default` (ask before most actions) for `claude -p` and the SDK. |
 | [Model](https://code.claude.com/docs/en/model-config#default-model-setting) | Unset, so your account's default applies: Opus 5.5 on most plans and providers |
 | [Auto memory](https://code.claude.com/docs/en/memory#enable-or-disable-auto-memory) | On: Claude keeps notes for itself in `MEMORY.md` and loads the start of it each session |
 | [Sandbox](https://code.claude.com/docs/en/settings-reference#sandbox-enabled) | Off. The sandbox is an OS-level limit on which files and network addresses Bash commands can reach. |
@@ -189,10 +189,11 @@ Test yourself with the [quiz](quiz.md): 5 questions.
 
 ## Sources
 
-Checked against these pages on 2026-10-26. If they disagree with this chapter, trust them.
+Checked against these pages on 2026-10-27. If they disagree with this chapter, trust them.
 
 - Settings: https://code.claude.com/docs/en/settings
 - Settings reference: https://code.claude.com/docs/en/settings-reference
+- Permissions (what `Read` rules cover): https://code.claude.com/docs/en/permissions#read-and-edit
 - Managed settings: https://code.claude.com/docs/en/managed-settings
 - Permission modes (starting mode): https://code.claude.com/docs/en/permission-modes
 - Model configuration: https://code.claude.com/docs/en/model-config

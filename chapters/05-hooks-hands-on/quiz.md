@@ -10,7 +10,7 @@ Pick an answer. The quiz checks it and shows the explanation.
 - [ ] c) you get a permission prompt
 - [ ] d) Claude Code stops the session
 
-**b** — only exit code 2 (or a JSON deny) blocks. Exit 1 shows an error notice and the call runs.
+**b** — by default, only exit code 2 (or a JSON deny) blocks. Exit 1 shows an error notice and the call runs.
 </quiz>
 
 <quiz>

@@ -110,7 +110,7 @@ You should see: `ℹ pass 4` and `ℹ fail 0`.
 claude plugin validate .
 ```
 
-You should see: `✔ Validation passed`. Advice about a missing marketplace install line is fine for a local plugin.
+You should see: `✔ Validation passed`. Advice about a missing marketplace install line, or a warning about a missing icon, is fine for a local plugin.
 
 **3. Check the inventory.**
 
@@ -180,11 +180,12 @@ Test yourself with the [quiz](quiz.md): 5 questions.
 
 ## Sources
 
-Checked against these pages on 2026-10-26. If they disagree with this chapter, trust them.
+Checked against these pages on 2026-10-27. If they disagree with this chapter, trust them.
 
 - Create a plugin: https://code.claude.com/docs/en/plugins/create
 - Plugin components (MCP servers, hooks, names): https://code.claude.com/docs/en/plugins/components
 - Plugin manifest reference: https://code.claude.com/docs/en/plugins/manifest-reference
+- Plugin loading (in-place and copied plugins): https://code.claude.com/docs/en/plugins/loading#in-place-and-copied-plugins
 - Plugin commands: https://code.claude.com/docs/en/plugins/cli-reference
 - Hooks (matching MCP tools): https://code.claude.com/docs/en/hooks#match-mcp-tools
 - Claude Code MCP (require approval for a tool): https://code.claude.com/docs/en/mcp#require-approval-for-a-specific-tool

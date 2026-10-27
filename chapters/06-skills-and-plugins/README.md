@@ -45,7 +45,7 @@ Every frontmatter field is optional, but the docs recommend a `description`. The
 | `user-invocable: false` | Only Claude can run it. It's hidden from the `/` menu. |
 | `allowed-tools` | Pre-approves tools for the turn that runs the skill. It doesn't restrict tools. |
 
-Once a skill runs, it stays in the conversation as one message. Keep `SKILL.md` under 500 lines, and put long reference material in extra files next to it. Edits apply live: the next turn uses the new version.
+Once a skill runs, it stays in the conversation as one message. Keep `SKILL.md` under 500 lines, and put long reference material in extra files next to it. Edits apply live: Claude Code picks them up in the same session, without a restart.
 
 ## Plugins
 
@@ -101,7 +101,7 @@ Skills, hooks, subagents and MCP servers all work without a plugin. A plugin onl
 claude plugin validate ./labs/readme-tools
 ```
 
-You should see: `✔ Validation passed`. A warning about a missing marketplace install line is fine for a local plugin.
+You should see: `✔ Validation passed`. Notes about a missing icon or marketplace install line are fine for a local plugin.
 
 **2. Make a practice folder with a thin README.**
 
@@ -160,7 +160,7 @@ Test yourself with the [quiz](quiz.md): 5 questions.
 
 ## Sources
 
-Checked against these pages on 2026-10-26. If they disagree with this chapter, trust them.
+Checked against these pages on 2026-10-27. If they disagree with this chapter, trust them.
 
 - Skills: https://code.claude.com/docs/en/skills
 - Plugins overview: https://code.claude.com/docs/en/plugins/overview

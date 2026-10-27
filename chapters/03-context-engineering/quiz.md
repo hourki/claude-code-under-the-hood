@@ -117,7 +117,7 @@ Pick an answer. The quiz checks it and shows the explanation.
 ## Set B
 
 <quiz>
-**1.** You read 25 config files an hour ago. Answers are now slower and less sharp. Why?
+**1.** You read 25 config files an hour ago. Answers now feel less focused. Why?
 
 - [ ] a) `CLAUDE.md` grows
 - [x] b) the config files are still in context
@@ -194,14 +194,14 @@ Pick an answer. The quiz checks it and shows the explanation.
 </quiz>
 
 <quiz>
-**8.** A hook that runs after every edit prints a 3,000-line lint report. Context cost?
+**8.** A hook that runs after every edit sends a 3,000-line lint report back to Claude. Context cost?
 
 - [ ] a) zero
 - [ ] b) the script, once
 - [ ] c) the first edit only
-- [x] d) the output is added each time, so it grows fast
+- [x] d) the report is added each time, so it grows fast
 
-**d** — hooks are free only when they add nothing. Print a short summary instead.
+**d** — hooks are free only when they add nothing. Send a short summary instead.
 </quiz>
 
 <quiz>
@@ -212,7 +212,7 @@ Pick an answer. The quiz checks it and shows the explanation.
 - [ ] c) a deny rule
 - [ ] d) a subagent
 
-**b** — it loads only when Claude reads a matching file.
+**b** — it loads only when Claude reads or edits a matching file.
 </quiz>
 
 <quiz>

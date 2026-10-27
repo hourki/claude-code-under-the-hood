@@ -25,14 +25,14 @@ Pick an answer. The quiz checks it and shows the explanation.
 </quiz>
 
 <quiz>
-**3.** You deny `Read(./.env)`. Claude then tries `cat .env` with Bash. What decides whether that runs?
+**3.** You deny `Read(./.env)`. Claude then runs `grep -r API_KEY .` with Bash. What decides whether that runs?
 
 - [ ] a) the `Read` deny blocks it
-- [x] b) Bash rules and the mode: a `Read` rule doesn't cover Bash
+- [x] b) Bash rules and the mode: a `Read` rule doesn't cover that command
 - [ ] c) the model's own judgment
 - [ ] d) nothing: Bash always runs
 
-**b** — Read and Edit rules only match the file tools. Use a hook or the sandbox to stop Bash from reading a file.
+**b** — Read rules cover the file tools and Bash commands that name the file, like `cat .env`. A `grep -r` that doesn't name it isn't covered. Use the sandbox to stop every process from reading a file.
 </quiz>
 
 <quiz>
@@ -40,10 +40,10 @@ Pick an answer. The quiz checks it and shows the explanation.
 
 - [ ] a) the session starts in bypass mode
 - [ ] b) Claude Code refuses to start
-- [x] c) nothing: that mode can't be set as default from a project file
+- [x] c) it's ignored: that mode can't be set as default from a project file
 - [ ] d) it starts in plan mode
 
-**c** — `auto` and `bypassPermissions` as `defaultMode` only take effect from `~/.claude/settings.json`.
+**c** — `auto` and `bypassPermissions` as `defaultMode` take effect only from user or managed settings. Here the session starts in Manual mode.
 </quiz>
 
 <quiz>
