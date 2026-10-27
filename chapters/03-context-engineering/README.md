@@ -1,7 +1,7 @@
 # 03 — Context engineering
 
 **In short:** everything the agent knows right now sits in one fixed-size space, the context window.
-Control what goes in, and the agent stays fast and sharp.
+Control what goes in, and the agent stays focused.
 
 **You'll learn:**
 
@@ -18,14 +18,14 @@ Say payments is broken in staging, and you ask the agent about it:
 | Bad | "check everything" | Every log and config file lands in the main context. It fills up fast. |
 | Good | "Use a subagent to find why the payments service crashes on start in staging. Return only the root cause and the failing file." | The noise stays in the subagent. A few lines come back. |
 
-The context window holds your instructions, your chat and every tool result, and its size is fixed. When it fills up, answers get slower and less sharp, and compaction kicks in.
+The context window holds your instructions, your chat and every tool result, and its size is fixed. A focused context gets you better answers and costs less. When it fills up, compaction kicks in.
 
 ## What loads, and when
 
 | When | What |
 |---|---|
 | Session start, always | System prompt, built-in tool definitions, root `CLAUDE.md` (and the ones in parent folders), rules without `paths`, the first 200 lines or 25KB of `MEMORY.md`, skill names and descriptions, MCP tool names |
-| On demand | A skill's full text when it runs, an MCP tool's schema via `ToolSearch`, path-scoped rules and subfolder `CLAUDE.md` files when Claude reads a matching file, memory topic files |
+| On demand | A skill's full text when it runs, an MCP tool's schema via `ToolSearch`, path-scoped rules and subfolder `CLAUDE.md` files when Claude reads or edits a matching file, memory topic files |
 | Grows every turn | Your prompts, the model's replies, every tool result |
 | Nothing | Hooks, which run outside the model. Only text a hook adds to the conversation costs space. |
 
@@ -57,7 +57,7 @@ MAIN CONTEXT                          SUBAGENT CONTEXT (fresh)
                                        (all of this is discarded)
 ```
 
-A subagent gets the task message and files like `CLAUDE.md`, but never your conversation. Only its summary comes back, and that summary does land in your context. So write the task like a note to a new colleague who missed your 30-minute explanation.
+A subagent gets the task message and files like `CLAUDE.md`, but not your conversation, unless it's a fork (a copy of your current conversation). Only its summary comes back, and that summary does land in your context. So write the task like a note to a new colleague who missed your 30-minute explanation.
 
 ## Where to put what
 
@@ -81,13 +81,35 @@ paths:
 - Never edit a migration that is already merged
 ```
 
-A path-scoped rule is an instruction that loads only when Claude reads a matching file. Save it as any `.md` file in `.claude/rules/`, or in `~/.claude/rules/` for all your projects. Without `paths`, the rule loads every session and survives compaction.
+A path-scoped rule is an instruction that loads only when Claude reads or edits a matching file. Save it as any `.md` file in `.claude/rules/`, or in `~/.claude/rules/` for all your projects. Without `paths`, the rule loads every session and survives compaction.
 
 ## Three more facts
 
 - `@imports` in `CLAUDE.md`, like `@docs/runbook.md`, load in full with it. They aren't lazy.
 - A large MCP result triggers a warning above 10,000 tokens and is capped at 25,000 by default (`MAX_MCP_OUTPUT_TOKENS`).
-- `/context` shows what uses space, and `/compact` compacts now. Compact between tasks, not in the middle of one.
+- `/compact` compacts now. Compact between tasks, not in the middle of one.
+
+## Watch your token spend
+
+Claude Code sends your full conversation with every request, so a big context costs you on every turn, not just once. Prompt caching makes the repeated part cheaper, not free.
+
+| Run | To see |
+|---|---|
+| `/context` | What fills the window right now |
+| `/usage` (alias `/cost`) | Your session's token usage and cost, and your plan's usage limits. On a Pro or Max plan, the cost figure isn't your bill, so watch the plan usage bars. |
+
+What costs the most:
+
+- **Large tool results.** They stay in context until compaction, and every later request carries them.
+- **A long root `CLAUDE.md`.** It loads every session, even for unrelated work.
+- **Subagents.** The summary lands in your context, and the subagent's own requests count toward your usage too.
+- **Compaction.** `/compact` reads the whole conversation to summarize it, then Claude Code re-reads up to 5 recent files.
+
+Three habits that cut spend:
+
+1. Run `/clear` when you switch to unrelated work. It costs nothing, while compacting a large context is itself a large request.
+2. Move workflow steps from `CLAUDE.md` into skills, which load only when they run.
+3. Send verbose work, like test runs and log reading, to a subagent, and ask for a short answer.
 
 ## Common mistakes
 
@@ -95,8 +117,8 @@ A path-scoped rule is an instruction that loads only when Claude reads a matchin
 |---|---|
 | `@imports` load only when relevant | They load in full with `CLAUDE.md`, every session. |
 | Subagent work is free for the main context | Its summary lands in your context. Keep it short. |
-| A long `CLAUDE.md` is safer | Past about 200 lines, rules get ignored. Move procedures to skills and file rules to path-scoped rules. |
-| A hook's output is free | A hook that prints a lot adds that text every time it runs. |
+| A long `CLAUDE.md` is safer | Past about 200 lines, Claude follows its rules less reliably. Move procedures to skills and file rules to path-scoped rules. |
+| A hook's output is free | Text a hook sends back to Claude is added every time it runs. Keep it short. |
 
 **Remember:**
 
@@ -109,9 +131,11 @@ Test yourself with the [quiz](quiz.md): two sets of 10 questions.
 
 ## Sources
 
-Checked against these pages on 2026-10-26. If they disagree with this chapter, trust them.
-
 - Context window: https://code.claude.com/docs/en/context-window
 - Memory (`CLAUDE.md`, rules, auto memory): https://code.claude.com/docs/en/memory
 - Subagents (what loads at startup): https://code.claude.com/docs/en/sub-agents
 - Claude Code MCP (output limits, tool search): https://code.claude.com/docs/en/mcp
+- Best practices (a focused context): https://code.claude.com/docs/en/best-practices#what-you-can-stop-doing
+- Hooks (which output reaches Claude): https://code.claude.com/docs/en/hooks#exit-code-0
+- Manage costs (`/usage`, reducing token usage): https://code.claude.com/docs/en/costs
+- Commands (`/context`, `/usage`): https://code.claude.com/docs/en/commands

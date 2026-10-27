@@ -70,8 +70,6 @@ Test yourself with the [quiz](quiz.md): 3 questions.
 
 ## Sources
 
-Checked against these pages on 2026-10-26. If they disagree with this chapter, trust them.
-
 - Claude Code overview: https://code.claude.com/docs/en/overview
 - Features overview (skills, hooks, subagents, plugins, MCP): https://code.claude.com/docs/en/features-overview
 - MCP specification 2026-07-28: https://modelcontextprotocol.io/specification/2026-07-28

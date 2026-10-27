@@ -49,7 +49,7 @@ An **observing** hook only watches. `PostToolUse` runs after a tool succeeds, so
 |---|---|
 | `0` | Success. JSON on stdout is applied. No JSON means no decision, so the normal permission flow runs. |
 | `2` | Block. stderr is the reason, and Claude sees it. |
-| Anything else, like `1` | A non-blocking error. **The call goes ahead**, with an error notice in the transcript. |
+| Anything else, like `1`, with no valid JSON | A non-blocking error. **The call goes ahead**, with an error notice in the transcript. |
 
 Exit code 1 is the trap: it's the usual Unix "failure" code, yet it doesn't block. A crashed hook, a typo in its path or a timeout doesn't block either. Add `"onFailure": "block"` to a hook (v2.1.295 and later) to turn any failure into a block.
 
@@ -162,7 +162,7 @@ The hook matches words, so it misses `bash -c "rm -rf x"`, aliases and variables
 
 | Mistake | Reality |
 |---|---|
-| Exit 1 to block | Only exit 2 or a JSON deny blocks. |
+| Exit 1 to block | Exit 1 doesn't block by default. Use exit 2 or a JSON deny. |
 | Matcher `bash` | Matchers are case-sensitive. The tool is `Bash`. |
 | Expecting `PostToolUse` to undo a call | It runs after the tool. Use `PreToolUse` to stop things. |
 | "My project hook doesn't fire" | Project hooks wait for the folder trust prompt. |
@@ -171,14 +171,12 @@ The hook matches words, so it misses `bash -c "rm -rf x"`, aliases and variables
 
 - A hook reads JSON on stdin and answers on stdout.
 - `PreToolUse` blocks. `PostToolUse` only observes.
-- Only exit 2 or a JSON deny blocks. Exit 1 lets the call through.
+- Exit 2 or a JSON deny blocks. Exit 1 lets the call through, unless `onFailure` is `block`.
 - A hook deny holds even in bypass mode, but a hook allow can't beat a deny rule.
 
 Test yourself with the [quiz](quiz.md): 5 questions.
 
 ## Sources
-
-Checked against these pages on 2026-10-26. If they disagree with this chapter, trust them.
 
 - Hooks reference: https://code.claude.com/docs/en/hooks
 - Hooks guide: https://code.claude.com/docs/en/hooks-guide

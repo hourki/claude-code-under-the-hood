@@ -51,7 +51,7 @@ The context grows every turn, and every result costs tokens (the units the model
 | Step | Between | When |
 |---|---|---|
 | Discovery: `tools/list` | Host ↔ server | Once, when the host connects. Again only if the server says its tools changed, or on a reconnect. |
-| Exposure | Host → model | With tool search (on by default), the model first sees only MCP tool names. To use one, it calls `ToolSearch`, which loads that tool's schema (its input format). Built-in tools are always loaded. |
+| Exposure | Host → model | With tool search (on by default), the model first sees only MCP tool names. To use one, it calls `ToolSearch`, which loads that tool's schema (its input format). Some built-in tools, like `WebFetch`, are deferred the same way. |
 | Invocation: `tools/call` | Model → host → server | Every use. Only the result comes back. |
 
 So the server doesn't resend its tool list on each call. Each use is one `tools/call` and one result.
@@ -61,7 +61,7 @@ So the server doesn't resend its tool list on each call. Each use is one `tools/
 The model writes this (Anthropic API format):
 
 ```json
-{"type": "tool_use", "name": "mcp__github__list_commits", "input": {"repo": "payments"}}
+{"type": "tool_use", "id": "toolu_01A09q90qw90lq917835lq9", "name": "mcp__github__list_commits", "input": {"repo": "payments"}}
 ```
 
 The host's MCP client turns it into this JSON-RPC message for the server:
@@ -125,10 +125,11 @@ Test yourself with the [quiz](quiz.md): 10 open questions and a 5-question retes
 
 ## Sources
 
-Checked against these pages on 2026-10-26. If they disagree with this chapter, trust them.
-
 - Claude Code overview: https://code.claude.com/docs/en/overview
+- How Claude Code works (choosing tools, compaction): https://code.claude.com/docs/en/how-claude-code-works
 - Claude Code MCP (tool search): https://code.claude.com/docs/en/mcp
+- Changelog (deferred built-in tools such as `WebFetch`): https://code.claude.com/docs/en/changelog
 - Permissions: https://code.claude.com/docs/en/permissions
 - Hooks: https://code.claude.com/docs/en/hooks
 - MCP tools: https://modelcontextprotocol.io/specification/2026-07-28/server/tools
+- Anthropic API, handle tool calls: https://platform.claude.com/docs/en/agents-and-tools/tool-use/handle-tool-calls

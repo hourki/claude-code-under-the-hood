@@ -9,13 +9,13 @@ The repo is a beginner course on how AI coding agents work inside, built around 
 | Path | Contents |
 |---|---|
 | `chapters/NN-slug/README.md` | One lesson per chapter |
-| `chapters/NN-slug/quiz.md` | That chapter's quiz (mkdocs-quiz syntax) |
+| `chapters/NN-slug/quiz.md` | That chapter's quiz (plain Markdown, answers in `<details>`) |
 | `chapters/README.md` | The Learning path page, also the site's home page |
 | `labs/hooks/` | Two TypeScript hooks (Chapter 05) |
 | `labs/readme-tools/` | A one-skill plugin (Chapter 06) |
 | `labs/subagents/` | Synthetic logs and a subagent (Chapter 07) |
 | `labs/notes-mcp/` | The notes MCP server (Chapters 08, 09, 11), also the `notes-kit` plugin (Chapter 12) |
-| `mkdocs.yml` | The site: ProperDocs + MaterialX + mkdocs-quiz, `docs_dir: chapters` |
+| `mkdocs.yml` | The site: ProperDocs + MaterialX, `docs_dir: chapters` |
 | `.github/workflows/docs.yml` | Builds the site with `properdocs build --strict` and deploys it to GitHub Pages |
 
 ## Gates
@@ -53,7 +53,7 @@ Every lesson keeps this shape, in this order:
 4. The body: a concrete example first, then the explanation
 5. `**Remember:**` with 3 to 5 takeaways
 6. `Test yourself with the [quiz](quiz.md): N questions.`
-7. `## Sources`, opening with "Checked against these pages on YYYY-MM-DD. If they disagree with this chapter, trust them."
+7. `## Sources`: a list of the official pages the chapter was checked against. The check date and the "trust the docs" note live only in the Accuracy section of `chapters/README.md`.
 
 Hands-on steps are bold and numbered, and each one says "You should see:" with the expected result. Where a command differs by OS, give macOS / Linux and Windows (PowerShell) versions.
 
@@ -73,7 +73,7 @@ Reading time is the words outside code blocks divided by 200, rounded.
 
 ## Quizzes
 
-- Syntax: a `<quiz>` block with options as `- [ ]` and the correct one as `- [x]`, then the explanation. Fill-in questions use `[[answer]]` and a `---` line before the explanation. Open questions use `<details markdown="1"><summary>Answer</summary>`. Each file ends with `<!-- mkdocs-quiz results -->`.
+- Syntax: the question, then options as a plain list (`- a) ...`). Fill-in questions show each blank as `____`. The answer and its explanation go in `<details markdown="1"><summary>Answer</summary>`, so they stay hidden on GitHub and on the site. Never mark the correct option in the list.
 - Never change a correct answer. Rewording a question for clarity is fine.
 - A question may only test its own chapter or earlier ones.
 - When you add or remove a question, update the count in the lesson's "Test yourself" line.
@@ -103,7 +103,7 @@ Update all of these in the same change:
 1. The folder name and the `# NN —` heading of its `README.md` and `quiz.md`
 2. The `nav` in `mkdocs.yml`
 3. The table in `chapters/README.md` (Level, Time, Needs)
-4. The table in the root `README.md`, including the quiz URLs on the site
+4. The table in the root `README.md`, including the quiz links
 5. Every relative link and "Chapter NN" mention in chapters, quizzes, lab READMEs and code comments
 
 Then check the learning path rules again and run the strict docs build.

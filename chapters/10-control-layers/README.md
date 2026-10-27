@@ -37,7 +37,7 @@ Say your `CLAUDE.md` says "never run `terraform destroy`". Then Claude reads a G
  ③ permission mode (fallback) ── decides allow / ask / deny
           │
           ▼
- ④ sandbox (Bash only, OS-level) ── blocks disallowed file / network access
+ ④ sandbox (shell commands, OS-level) ── blocks disallowed file / network access
           │
           ▼
  ⑤ external auth (AWS IAM, database roles, token scopes) ── 403 / Forbidden
@@ -50,10 +50,10 @@ External auth is the target system's own access control, like AWS IAM or databas
 
 | Layer | Strength | Weakness | Details |
 |---|---|---|---|
-| ① `PreToolUse` hook | Your code reads the full command. Its deny holds even in `bypassPermissions`. | Only as good as your parser. Exit code 1 or a crash doesn't block. | [Chapter 05](../05-hooks-hands-on/README.md) |
+| ① `PreToolUse` hook | Your code reads the full command. Its deny holds even in `bypassPermissions`. | Only as good as your parser. By default, exit code 1 or a crash doesn't block. | [Chapter 05](../05-hooks-hands-on/README.md) |
 | ② Permission rules | Simple, and deny always wins | Text patterns: `Bash(aws * --profile prod*)` can miss `--profile=prod` | [Chapter 04](../04-permissions/README.md) |
 | ③ Permission mode | One switch for the whole session | A fallback only. `bypassPermissions` skips prompts. | [Chapter 04](../04-permissions/README.md#permission-modes) |
-| ④ Sandbox | Enforced by the operating system, so it holds under prompt injection | Bash only, and only when it's on | Below |
+| ④ Sandbox | Enforced by the operating system, so it holds under prompt injection | Shell commands only, and only when it's on | Below |
 | ⑤ External auth | Closest to the resource. Holds even if every layer above fails. | Needs separate credentials per environment | |
 
 The docs are blunt about it: "sandbox restrictions still apply even if a prompt injection bypasses Claude's decision-making", and "`bypassPermissions` offers no protection against prompt injection".
@@ -75,12 +75,12 @@ Stack them. The closer a control sits to the resource, the stronger it is.
 
 ## The sandbox
 
-The sandbox puts OS-level limits on what Bash commands can touch: the filesystem and the network. You need both. Without network limits, a command can send your data out, and without filesystem limits, it can plant a backdoor.
+The sandbox puts OS-level limits on what shell commands can touch: the filesystem and the network. You need both. Without network limits, a command can send your data out, and without filesystem limits, it can plant a backdoor.
 
 | OS | What it uses |
 |---|---|
 | macOS | Built-in Seatbelt. Nothing to install. |
-| Linux / WSL2 | `bubblewrap` and `socat`, which you install. No root needed. |
+| Linux / WSL2 | `bubblewrap` and `socat`, which you install with your package manager |
 | WSL1, native Windows | Not supported |
 
 On Ubuntu 24.04 and later, AppArmor blocks bubblewrap until you add a profile (see the sandboxing docs).
@@ -93,7 +93,7 @@ On Ubuntu 24.04 and later, AppArmor blocks bubblewrap until you add a profile (s
 |---|---|
 | Writes | The working directory, a temp directory, and folders you add |
 | Reads | Most of the machine, **including `~/.ssh` and `~/.aws/credentials`**. Add `filesystem.denyRead` entries to hide them. |
-| Network | Through a local proxy. No domains are allowed at first, so a new domain triggers a prompt in most modes. |
+| Network | Through a local proxy. No domains are allowed at first, so in Manual mode a new domain triggers a prompt. |
 
 **What it covers:** Bash and shell commands only. File tools, MCP servers and hooks run outside it, unless you run all of Claude Code in a container or VM.
 
@@ -105,25 +105,25 @@ On Ubuntu 24.04 and later, AppArmor blocks bubblewrap until you add a profile (s
 
 | Mistake | Reality |
 |---|---|
-| The sandbox covers MCP tools | It covers Bash only. An MCP server runs outside it. |
+| The sandbox covers MCP tools | It covers shell commands only. An MCP server runs outside it. |
 | `.claude/rules/` are permission rules | They're instructions, so they're advisory. Permission rules live under `permissions` in a settings file. |
 
 **Remember:**
 
 - Text the model reads is advice. Code outside the model is enforcement.
 - A tool call passes a hook, rules, the mode, the sandbox, then external auth.
-- The sandbox covers Bash only, and only when it's on.
+- The sandbox covers shell commands only, and only when it's on.
 - The strongest guard is a credential without prod access.
 
 Test yourself with the [quiz](quiz.md): 10 questions.
 
 ## Sources
 
-Checked against these pages on 2026-10-26. If they disagree with this chapter, trust them.
-
 - Sandboxing: https://code.claude.com/docs/en/sandboxing
 - Security (prompt injection): https://code.claude.com/docs/en/security
 - Permissions: https://code.claude.com/docs/en/permissions
-- Hooks: https://code.claude.com/docs/en/hooks
+- Permission modes (`bypassPermissions`): https://code.claude.com/docs/en/permission-modes#skip-all-checks-with-bypasspermissions-mode
+- Hooks: https://code.claude.com/docs/en/hooks#exit-code-output
+- Hooks and permission modes: https://code.claude.com/docs/en/hooks-guide#hooks-and-permission-modes
 - Memory (`.claude/rules/`): https://code.claude.com/docs/en/memory
 - bubblewrap: https://github.com/containers/bubblewrap
