@@ -1,6 +1,6 @@
 # 01 — Quiz: runtime lifecycle
 
-Answer each question first, then open **Answer** to check it.
+Answer each question first. Scored questions check themselves; open questions have a model answer to open.
 
 ## Part 1 — Open questions
 
@@ -19,34 +19,31 @@ Answer each question first, then open **Answer** to check it.
 
 </details>
 
+<quiz>
 **2.** Model, host, or MCP server?
 
-- a) decides to run `npm test`: ____
-- b) runs it: ____
-- c) calls the GitHub REST API: ____
-- d) enforces a deny rule: ____
-- e) turns the tool request into JSON-RPC: ____
+- a) decides to run `npm test`: [[model]]
+- b) runs it: [[host]]
+- c) calls the GitHub REST API: [[MCP server]]
+- d) enforces a deny rule: [[host]]
+- e) turns the tool request into JSON-RPC: [[host]]
 
-<details markdown="1"><summary>Answer</summary>
-
+---
 - a) **model** — it decides and requests.
 - b) **host** — it executes built-in tools like Bash.
 - c) **MCP server** — the GitHub MCP server calls GitHub's API.
 - d) **host** — enforcement lives outside the model.
 - e) **host** — its MCP client builds the `tools/call` message.
+</quiz>
 
-</details>
-
+<quiz>
 **3.** True or false: "Every time Claude uses a GitHub MCP tool, the server first sends the full tool list."
 
-- True
-- False
-
-<details markdown="1"><summary>Answer</summary>
+- [ ] True
+- [x] False
 
 **False.** `tools/list` runs at connect (or from cache, on `list_changed`, or on reconnect). Each use is only `tools/call` → result. `name` and `arguments` are separate fields in that call.
-
-</details>
+</quiz>
 
 **4.** You connected a GitHub MCP server with 80 tools, but they take up almost no context. Why? What happens when one tool is needed?
 
@@ -118,67 +115,59 @@ Side note: an *ask* rule triggers a permission prompt, not a hook.
 
 ## Part 2 — Retest (multiple choice)
 
+<quiz>
 **1.** The GitHub server connected at start. Claude calls its tools 4 times. The tools didn't change. How many `tools/list` requests happen during those 4 calls?
 
-- a) 4
-- b) 1
-- c) 0
-- d) 8
-
-<details markdown="1"><summary>Answer</summary>
+- [ ] a) 4
+- [ ] b) 1
+- [x] c) 0
+- [ ] d) 8
 
 **c** — discovery happened at connect. Each use is only `tools/call`.
+</quiz>
 
-</details>
-
+<quiz>
 **2.** Tool search is on. Only `list_buckets`' name is in context. What happens first?
 
-- a) the host sends `tools/list`
-- b) the model calls `ToolSearch`; the host loads that schema from what it already discovered
-- c) the model calls the tool without a schema
-- d) the server pushes the schema
-
-<details markdown="1"><summary>Answer</summary>
+- [ ] a) the host sends `tools/list`
+- [x] b) the model calls `ToolSearch`; the host loads that schema from what it already discovered
+- [ ] c) the model calls the tool without a schema
+- [ ] d) the server pushes the schema
 
 **b** — the host already has every schema from discovery. `ToolSearch` only loads one into context.
+</quiz>
 
-</details>
-
+<quiz>
 **3.** You ran `claude mcp add --transport stdio db -- npx -y @bytebase/dbhub --dsn ...`. Who connects to PostgreSQL?
 
-- a) the Claude Code process
-- b) the model
-- c) a Bytebase cloud service
-- d) the DBHub process on your laptop, started by Claude Code
-
-<details markdown="1"><summary>Answer</summary>
+- [ ] a) the Claude Code process
+- [ ] b) the model
+- [ ] c) a Bytebase cloud service
+- [x] d) the DBHub process on your laptop, started by Claude Code
 
 **d** — a stdio server is a separate local process. It holds the DB connection and executes the queries.
+</quiz>
 
-</details>
-
+<quiz>
 **4.** A built-in `Read` on a 400-line file. Does the result use context?
 
-- a) yes, every tool result does
-- b) no, built-ins are free
-- c) only MCP results do
-- d) only above 10,000 tokens
-
-<details markdown="1"><summary>Answer</summary>
+- [x] a) yes, every tool result does
+- [ ] b) no, built-ins are free
+- [ ] c) only MCP results do
+- [ ] d) only above 10,000 tokens
 
 **a** — every tool result enters the context.
+</quiz>
 
-</details>
-
+<quiz>
 **5.** You read a file 20 minutes ago. No compaction since. Is it still in context?
 
-- a) no
-- b) only a summary
-- c) yes, until compaction or session end
-- d) only if re-read
-
-<details markdown="1"><summary>Answer</summary>
+- [ ] a) no
+- [ ] b) only a summary
+- [x] c) yes, until compaction or session end
+- [ ] d) only if re-read
 
 **c** — results stay in context until compaction or the end of the session.
+</quiz>
 
-</details>
+<!-- mkdocs-quiz results -->
