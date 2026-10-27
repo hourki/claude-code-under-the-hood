@@ -258,8 +258,6 @@ Test yourself with the [quiz](quiz.md): 5 questions.
 
 ## Sources
 
-Checked against these pages on 2026-10-27. If they disagree with this chapter, trust them.
-
 - MCP quickstart, build a server: https://modelcontextprotocol.io/docs/2026-07-28/develop/build-server
 - MCP TypeScript SDK: https://github.com/modelcontextprotocol/typescript-sdk
 - MCP stdio transport: https://modelcontextprotocol.io/specification/2026-07-28/basic/transports/stdio

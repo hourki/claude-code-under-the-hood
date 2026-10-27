@@ -56,5 +56,5 @@ claude doctor
 
 - **Site:** https://hourki.github.io/claude-code-under-the-hood/
 - **Contributing:** found a mistake or an outdated fact? Open an issue or a pull request. To preview the site, run `python3 -m venv .venv`, `.venv/bin/pip install -r requirements-docs.txt` and `.venv/bin/properdocs serve -f mkdocs.yml`.
-- **Accuracy:** every chapter was checked against the official docs on 2026-10-26. Claude Code and MCP change fast, so trust the docs when they disagree.
+- **Accuracy:** see [Accuracy](chapters/README.md#accuracy).
 - **License:** [MIT](LICENSE)

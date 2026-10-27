@@ -53,7 +53,7 @@ Every lesson keeps this shape, in this order:
 4. The body: a concrete example first, then the explanation
 5. `**Remember:**` with 3 to 5 takeaways
 6. `Test yourself with the [quiz](quiz.md): N questions.`
-7. `## Sources`, opening with "Checked against these pages on YYYY-MM-DD. If they disagree with this chapter, trust them."
+7. `## Sources`: a list of the official pages the chapter was checked against. The check date and the "trust the docs" note live only in the Accuracy section of `chapters/README.md`.
 
 Hands-on steps are bold and numbered, and each one says "You should see:" with the expected result. Where a command differs by OS, give macOS / Linux and Windows (PowerShell) versions.
 

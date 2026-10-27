@@ -189,8 +189,6 @@ Test yourself with the [quiz](quiz.md): 5 questions.
 
 ## Sources
 
-Checked against these pages on 2026-10-27. If they disagree with this chapter, trust them.
-
 - Settings: https://code.claude.com/docs/en/settings
 - Settings reference: https://code.claude.com/docs/en/settings-reference
 - Permissions (what `Read` rules cover): https://code.claude.com/docs/en/permissions#read-and-edit

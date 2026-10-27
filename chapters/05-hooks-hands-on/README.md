@@ -178,8 +178,6 @@ Test yourself with the [quiz](quiz.md): 5 questions.
 
 ## Sources
 
-Checked against these pages on 2026-10-27. If they disagree with this chapter, trust them.
-
 - Hooks reference: https://code.claude.com/docs/en/hooks
 - Hooks guide: https://code.claude.com/docs/en/hooks-guide
 - Precedence among rules and hooks: https://code.claude.com/docs/en/permissions#precedence-among-rules-hooks-and-mods

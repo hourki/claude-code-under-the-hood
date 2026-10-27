@@ -149,8 +149,6 @@ Test yourself with the [quiz](quiz.md): 5 questions.
 
 ## Sources
 
-Checked against these pages on 2026-10-27. If they disagree with this chapter, trust them.
-
 - Local server security: https://modelcontextprotocol.io/docs/2026-07-28/tutorials/security/local-server-security
 - Security best practices: https://modelcontextprotocol.io/docs/2026-07-28/tutorials/security/security_best_practices
 - Authorization security considerations: https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization/security-considerations

@@ -119,8 +119,6 @@ Test yourself with the [quiz](quiz.md): 10 questions.
 
 ## Sources
 
-Checked against these pages on 2026-10-27. If they disagree with this chapter, trust them.
-
 - Sandboxing: https://code.claude.com/docs/en/sandboxing
 - Security (prompt injection): https://code.claude.com/docs/en/security
 - Permissions: https://code.claude.com/docs/en/permissions

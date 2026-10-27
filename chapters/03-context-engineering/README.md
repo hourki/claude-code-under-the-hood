@@ -109,8 +109,6 @@ Test yourself with the [quiz](quiz.md): two sets of 10 questions.
 
 ## Sources
 
-Checked against these pages on 2026-10-27. If they disagree with this chapter, trust them.
-
 - Context window: https://code.claude.com/docs/en/context-window
 - Memory (`CLAUDE.md`, rules, auto memory): https://code.claude.com/docs/en/memory
 - Subagents (what loads at startup): https://code.claude.com/docs/en/sub-agents

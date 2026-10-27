@@ -180,8 +180,6 @@ Test yourself with the [quiz](quiz.md): 5 questions.
 
 ## Sources
 
-Checked against these pages on 2026-10-27. If they disagree with this chapter, trust them.
-
 - Create a plugin: https://code.claude.com/docs/en/plugins/create
 - Plugin components (MCP servers, hooks, names): https://code.claude.com/docs/en/plugins/components
 - Plugin manifest reference: https://code.claude.com/docs/en/plugins/manifest-reference

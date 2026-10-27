@@ -125,8 +125,6 @@ Test yourself with the [quiz](quiz.md): 10 open questions and a 5-question retes
 
 ## Sources
 
-Checked against these pages on 2026-10-27. If they disagree with this chapter, trust them.
-
 - Claude Code overview: https://code.claude.com/docs/en/overview
 - How Claude Code works (choosing tools, compaction): https://code.claude.com/docs/en/how-claude-code-works
 - Claude Code MCP (tool search): https://code.claude.com/docs/en/mcp

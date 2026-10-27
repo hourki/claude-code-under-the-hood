@@ -154,8 +154,6 @@ Test yourself with the [quiz](quiz.md): 5 questions.
 
 ## Sources
 
-Checked against these pages on 2026-10-27. If they disagree with this chapter, trust them.
-
 - MCP architecture: https://modelcontextprotocol.io/docs/2026-07-28/learn/architecture
 - Server concepts: https://modelcontextprotocol.io/docs/2026-07-28/learn/server-concepts
 - Client concepts: https://modelcontextprotocol.io/docs/2026-07-28/learn/client-concepts
