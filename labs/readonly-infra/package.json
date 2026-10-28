@@ -1,0 +1,17 @@
+{
+  "name": "readonly-infra-lab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Settings and a PreToolUse hook for a read-only infrastructure agent.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "lint": "tsc --noEmit",
+    "test": "node --test dist/writes.test.js"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "typescript": "^7.0.2"
+  }
+}

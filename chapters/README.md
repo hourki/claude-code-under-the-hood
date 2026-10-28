@@ -21,6 +21,10 @@ A hands-on course on how AI coding agents work inside, built around Claude Code.
 | 11 | [MCP security](11-mcp-security/README.md) | Hands-on | 7 min | 09, 10 | A hardened notes server | [Quiz](11-mcp-security/quiz.md) |
 | **Ship** | | | | | | |
 | 12 | [Capstone: one plugin](12-capstone-plugin/README.md) | Hands-on | 4 min | 05, 06, 09 | The `notes-kit` plugin: server, skill and hook | [Quiz](12-capstone-plugin/quiz.md) |
+| **Production** | | | | | | |
+| 13 | [Build your own harness](13-build-your-own-harness/README.md) | Hands-on | 7 min | 04, 05, 07, 08 | A tiny agent host with one read-only tool | [Quiz](13-build-your-own-harness/quiz.md) |
+| 14 | [Agents in CI/CD](14-agents-in-ci-cd/README.md) | Intermediate | 5 min | 04, 08, 10 | A read-only GitHub Actions workflow | [Quiz](14-agents-in-ci-cd/quiz.md) |
+| 15 | [Agents in production](15-agents-in-production/README.md) | Hands-on | 7 min | 02, 05, 10 | Settings and a hook for a read-only infra agent | [Quiz](15-agents-in-production/quiz.md) |
 
 "Time" is the reading only. Hands-on steps take longer.
 

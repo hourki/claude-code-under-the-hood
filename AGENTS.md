@@ -15,6 +15,9 @@ The repo is a beginner course on how AI coding agents work inside, built around 
 | `labs/readme-tools/` | A one-skill plugin (Chapter 06) |
 | `labs/subagents/` | Synthetic logs and a subagent (Chapter 07) |
 | `labs/notes-mcp/` | The notes MCP server (Chapters 08, 09, 11), also the `notes-kit` plugin (Chapter 12) |
+| `labs/mini-harness/` | A tiny Agent SDK host with one read-only tool (Chapter 13) |
+| `labs/ci-agent/` | A read-only GitHub Actions workflow to copy into your own repo (Chapter 14) |
+| `labs/readonly-infra/` | Settings and a `PreToolUse` hook for a read-only infra agent (Chapter 15) |
 | `mkdocs.yml` | The site: ProperDocs + MaterialX + mkdocs-quiz, `docs_dir: chapters` |
 | `.github/workflows/docs.yml` | Builds the site with `properdocs build --strict` and deploys it to GitHub Pages |
 
@@ -26,6 +29,8 @@ A change is done only when every gate it touches passes.
 |---|---|---|
 | `labs/hooks` | `npm install`, `npm run lint`, `npm run build`, `npm test` | `ℹ pass 3`, `ℹ fail 0` |
 | `labs/notes-mcp` | `npm install`, `npm run lint`, `npm run build`, `npm test` | `ℹ pass 4`, `ℹ fail 0` |
+| `labs/mini-harness` | `npm install`, `npm run lint`, `npm run build`, `npm test` | `ℹ pass 2`, `ℹ fail 0` |
+| `labs/readonly-infra` | `npm install`, `npm run lint`, `npm run build`, `npm test` | `ℹ pass 5`, `ℹ fail 0` |
 | Anything under `chapters/` or `mkdocs.yml` | `.venv/bin/properdocs build --strict -f mkdocs.yml` | Zero warnings |
 
 Set up the docs tools once with `python3 -m venv .venv` and `.venv/bin/pip install -r requirements-docs.txt`.
@@ -82,7 +87,7 @@ Reading time is the words outside code blocks divided by 200, rounded.
 
 - TypeScript, ES modules, `strict`, with no unused locals or parameters. `npm run lint` is `tsc --noEmit`.
 - The simplest code that works: plain functions and plain objects, functions of 20 lines or fewer, nesting of 2 levels or less. No classes, generics tricks, chained ternaries or extra error-handling layers.
-- Dependencies: the official MCP SDK packages and `zod` in `notes-mcp`, plus `typescript` and `@types/node` as dev dependencies. Nothing else.
+- Dependencies: the official MCP SDK packages and `zod` in `notes-mcp`, `@anthropic-ai/claude-agent-sdk` and `zod` in `mini-harness`, plus `typescript` and `@types/node` as dev dependencies. Nothing else.
 - Comments explain why, briefly. A known limit gets `// shortcut: <the limit>`.
 - A stdio MCP server writes logs to stderr only. stdout carries the protocol.
 - Labs write only inside their own folder. `notes.json` and `tool-log.txt` are gitignored.

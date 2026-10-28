@@ -53,6 +53,9 @@ You need [Claude Code](https://code.claude.com/docs/en/overview), a [Claude subs
 | 10 | [Control layers](chapters/10-control-layers/README.md) | Intermediate | 4 min | — | [Quiz](https://hourki.github.io/claude-code-under-the-hood/10-control-layers/quiz/) | ✅ Verified |
 | 11 | [MCP security](chapters/11-mcp-security/README.md) | Hands-on | 7 min | [notes-mcp](labs/notes-mcp) | [Quiz](https://hourki.github.io/claude-code-under-the-hood/11-mcp-security/quiz/) | ✅ Verified |
 | 12 | [Capstone: one plugin](chapters/12-capstone-plugin/README.md) | Hands-on | 4 min | [notes-mcp](labs/notes-mcp) | [Quiz](https://hourki.github.io/claude-code-under-the-hood/12-capstone-plugin/quiz/) | ✅ Verified |
+| 13 | [Build your own harness](chapters/13-build-your-own-harness/README.md) | Hands-on | 7 min | [mini-harness](labs/mini-harness) | [Quiz](https://hourki.github.io/claude-code-under-the-hood/13-build-your-own-harness/quiz/) | 🚧 Draft |
+| 14 | [Agents in CI/CD](chapters/14-agents-in-ci-cd/README.md) | Intermediate | 5 min | [ci-agent](labs/ci-agent) | [Quiz](https://hourki.github.io/claude-code-under-the-hood/14-agents-in-ci-cd/quiz/) | 🚧 Draft |
+| 15 | [Agents in production](chapters/15-agents-in-production/README.md) | Hands-on | 7 min | [readonly-infra](labs/readonly-infra) | [Quiz](https://hourki.github.io/claude-code-under-the-hood/15-agents-in-production/quiz/) | 🚧 Draft |
 
 ✅ Verified: every claim checked against the official docs (see [Accuracy](chapters/README.md#accuracy)). 🚧 Draft: not fully checked yet. Steps inside a Claude session were checked by reading, not by running them.
 

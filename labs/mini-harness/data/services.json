@@ -1,0 +1,5 @@
+[
+  { "name": "payments", "status": "degraded", "version": "2.4.1", "note": "error rate above 2% since the last deploy" },
+  { "name": "search", "status": "healthy", "version": "1.9.0" },
+  { "name": "checkout", "status": "healthy", "version": "3.0.2" }
+]

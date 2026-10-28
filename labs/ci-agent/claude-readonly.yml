@@ -1,0 +1,22 @@
+name: Claude read-only summary
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+  id-token: write
+jobs:
+  summarize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: anthropics/claude-code-action@d70510b174a1244958df0b03166a54912811f3e6 # v1.0.264
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: "Summarize README.md in five bullet points. Then list the files that contain TODO."
+          claude_args: |
+            --allowedTools "Read,Glob,Grep"
+            --disallowedTools "Bash,Edit,Write"
+            --max-turns 5

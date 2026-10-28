@@ -73,3 +73,13 @@ nav:
       - 12 Capstone plugin:
           - Lesson: 12-capstone-plugin/README.md
           - Quiz: 12-capstone-plugin/quiz.md
+  - Production:
+      - 13 Build your own harness:
+          - Lesson: 13-build-your-own-harness/README.md
+          - Quiz: 13-build-your-own-harness/quiz.md
+      - 14 Agents in CI/CD:
+          - Lesson: 14-agents-in-ci-cd/README.md
+          - Quiz: 14-agents-in-ci-cd/quiz.md
+      - 15 Agents in production:
+          - Lesson: 15-agents-in-production/README.md
+          - Quiz: 15-agents-in-production/quiz.md
