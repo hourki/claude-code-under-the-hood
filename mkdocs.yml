@@ -83,3 +83,6 @@ nav:
       - 15 Agents in production:
           - Lesson: 15-agents-in-production/README.md
           - Quiz: 15-agents-in-production/quiz.md
+      - 16 Leaving your agent running:
+          - Lesson: 16-leaving-your-agent-running/README.md
+          - Quiz: 16-leaving-your-agent-running/quiz.md

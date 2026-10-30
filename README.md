@@ -56,6 +56,7 @@ You need [Claude Code](https://code.claude.com/docs/en/overview), a [Claude subs
 | 13 | [Build your own harness](chapters/13-build-your-own-harness/README.md) | Hands-on | 7 min | [mini-harness](labs/mini-harness) | [Quiz](https://hourki.github.io/claude-code-under-the-hood/13-build-your-own-harness/quiz/) | 🚧 Draft |
 | 14 | [Agents in CI/CD](chapters/14-agents-in-ci-cd/README.md) | Intermediate | 5 min | [ci-agent](labs/ci-agent) | [Quiz](https://hourki.github.io/claude-code-under-the-hood/14-agents-in-ci-cd/quiz/) | 🚧 Draft |
 | 15 | [Agents in production](chapters/15-agents-in-production/README.md) | Hands-on | 7 min | [readonly-infra](labs/readonly-infra) | [Quiz](https://hourki.github.io/claude-code-under-the-hood/15-agents-in-production/quiz/) | 🚧 Draft |
+| 16 | [Leaving your agent running](chapters/16-leaving-your-agent-running/README.md) | Intermediate | 5 min | In the chapter | [Quiz](https://hourki.github.io/claude-code-under-the-hood/16-leaving-your-agent-running/quiz/) | 🚧 Draft |
 
 ✅ Verified: every claim checked against the official docs (see [Accuracy](chapters/README.md#accuracy)). 🚧 Draft: not fully checked yet. Steps inside a Claude session were checked by reading, not by running them.
 
